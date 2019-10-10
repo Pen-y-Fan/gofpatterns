@@ -1,0 +1,18 @@
+# IDE
+/.idea
+/nbproject
+/.vscode
+
+# PHPUnit
+
+phpunit.xml
+/.phpunit.result.cache
+
+# build
+
+composer.phar
+/vendor/
+/_build/
+
+# translations
+*.mo
