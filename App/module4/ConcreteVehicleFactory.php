@@ -19,15 +19,15 @@ class ConcreteVehicleFactory extends AbstractVehicleFactory
     {
         $randomVehicle = rand(0, 100) / 100;
 
-        if ($randomVehicle < $this->chanceCar) {
+        if ($randomVehicle <= $this->chanceCar) {
             return new Car();
         }
 
-        if ($randomVehicle < ($this->chanceCar + $this->chanceBus)) {
+        if ($randomVehicle <= ($this->chanceCar + $this->chanceBus)) {
             return new Bus();
         }
 
-        if ($randomVehicle < ($this->chanceCar + $this->chanceBus + $this->chanceBicycle)) {
+        if ($randomVehicle <= ($this->chanceCar + $this->chanceBus + $this->chanceBicycle)) {
             return new Bicycle();
         }
 

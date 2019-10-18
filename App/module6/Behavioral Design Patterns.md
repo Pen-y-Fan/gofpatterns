@@ -149,3 +149,16 @@ Flexibility
 **Objective**:Make the `VehicleQueue` an `Observer` of the `Time` class.
 
 Make the `VehicleQueue` an Observer of the `Time` class. Every five seconds the vehicle queue should attempt to dequeue a vehicle but if and only if the light is green. Consider whether you need to make any changes to the standard Observer pattern to make this work.
+
+## Traffic Flow System - Exercise
+
+Course project, part 7
+
+**Objective**: Finish your traffic flow system.
+
+The traffic simulation is designed to run with no input from the user. Since we are deliberately avoiding the complexities of coding a graphical user interface, we will hard-code the length of time (number of seconds) the simulation runs as well as the relative percentages of cars, buses, trucks, bicycles, and pedestrians in all directions.
+
+1. Set the simulation to run for 600 seconds (ten minutes). You will need to construct a `SignalMediator`, the four vehicle queues and the four vehicle factories that go with them.
+1. Make 10% of the vehicles in north and south bicycles, and the rest pedestrians `ConcreteVehicleFactory(0, 0, 0.1, 0.9)`. Use the default frequencies of cars, buses, and bicycles for the east and west roads.
+1. Assume that a "vehicle" enters from the north approximately once every one hundred seconds (1/100 = 0.01), from the south once every fifty seconds (1/50 = 0.02), from the east once every twenty seconds (1/20 = 0.05), and from the west once every thirty seconds (0.0333). Note that these are only average times.
+1. For output, every second (simulation seconds, not real seconds) list the current time, and the length and number of vehicles in the east and west queues and the combined number of pedestrians and bicycles in the north and south queues. (Since pedestrians tend to bunch up, their queue length will almost always be effectively zero.)

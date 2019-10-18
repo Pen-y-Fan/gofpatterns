@@ -31,6 +31,7 @@ final class Time implements SplSubject
     private static $observers;
 
     /**
+     * Initialise the singleton Time
      * @param integer $endTime
      */
     public static function init(int $endTime): void
@@ -44,7 +45,6 @@ final class Time implements SplSubject
     }
 
     /**
-     * @param integer $endTime
      * @return Time
      */
     public static function getInstance(): Time
@@ -53,6 +53,7 @@ final class Time implements SplSubject
     }
 
     /**
+     * Simulate the passage of time (1 second) per run
      * @return void
      */
     public static function run(): void

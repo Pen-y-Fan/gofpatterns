@@ -2,20 +2,21 @@
 
 declare(strict_types=1);
 
-namespace App\module6;
+namespace App\module7;
 
 use App\module2\AbstractTrafficSignal;
 use App\module2\TrafficLight;
 use App\module2\WalkSign;
 use App\module4\ConcreteVehicleFactory;
-use SplObjectStorage;
+use App\module6\Time;
+use SplQueue;
 use SplObserver;
 use SplSubject;
 
 class VehicleQueue implements SplObserver
 {
     /**
-     * @var SplObjectStorage
+     * @var SplQueue
      */
     protected $theQueue;
 
@@ -44,7 +45,7 @@ class VehicleQueue implements SplObserver
         ConcreteVehicleFactory $theFactory,
         AbstractTrafficSignal $signal
     ) {
-        $this->theQueue = new SplObjectStorage();
+        $this->theQueue = new SplQueue();
         $this->vehiclesPerSecond = $vehiclesPerSecond;
         $this->theFactory = $theFactory;
         $this->signal = $signal;
@@ -60,8 +61,7 @@ class VehicleQueue implements SplObserver
     {
         $r = rand(1, 1000) / 1000;
         if ($r <= $this->vehiclesPerSecond) {
-            $this->theQueue->attach($this->theFactory->createVehicle());
-            $this->queueLength += $this->theQueue->current()->getLength();
+            $this->theQueue->enqueue($this->theFactory->createVehicle());
         }
     }
 
@@ -74,8 +74,7 @@ class VehicleQueue implements SplObserver
     {
         $this->theQueue->rewind();
         if ($this->theQueue->valid()) {
-            $this->queueLength -= $this->theQueue->current()->getLength();
-            $this->theQueue->detach($this->theQueue->current());
+            $this->theQueue->dequeue();
         }
     }
 
@@ -85,7 +84,13 @@ class VehicleQueue implements SplObserver
      */
     public function getLength(): float
     {
-        return $this->queueLength;
+        
+        $length = 0;
+        $this->theQueue->rewind();
+        foreach ($this->theQueue as $vehicle) {
+            $length += $vehicle->getLength();
+        }
+        return $length;
     }
 
     /**
@@ -115,10 +120,11 @@ class VehicleQueue implements SplObserver
 
     public function update(SplSubject $subject): void
     {
+        $this->enter();
         if (
             $subject::getTime() % 5 === 0
             && ($this->signal->getMessage() == "green"
-            || $this->signal->getMessage() == "walk")
+            || $this->signal->getMessage() == "Walk")
         ) {
             $this->leave();
         }
