@@ -26,27 +26,6 @@ class TimeTest extends TestCase
     }
 
     /**
-     * @todo test when splObserver class has been created
-     *
-     * @return void
-     */
-    public function testInstanceCanRegisterObserver(): void
-    {
-        Time::init(5);
-        $this->assertTrue(true);
-
-        // $observer = new SplObserver();
-        // Time::init(5);
-        // $firstCall = Time::getInstance();
-        // $firstCall->attach($observer);
-
-        // $this->assertInstanceOf(Time::class, $firstCall);
-        // $this->assertSame($firstCall, $secondCall);
-        // $this->assertSame(0, $secondCall->getTime());
-        // $this->assertSame($firstCall->getTime(), $secondCall->getTime());
-    }
-
-    /**
      * Run the Time 6 times, effectively reaching the EndOfTime and setting the instance to null
      * ready for the next test
      *

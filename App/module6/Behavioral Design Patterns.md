@@ -141,3 +141,11 @@ The basic algorithm you want to implement has seven states that are cycled throu
 The `Inf` in state one means that the east-west lights stay green until a pedestrian on the north-south direction explicitly requests a walk signal.
 
 This is one of the most important classes in the system. It also offers many options for how it is written, so I'm going to leave the exact details open.
+
+## Observer Class - Exercise
+
+Flexibility
+
+**Objective**:Make the `VehicleQueue` an `Observer` of the `Time` class.
+
+Make the `VehicleQueue` an Observer of the `Time` class. Every five seconds the vehicle queue should attempt to dequeue a vehicle but if and only if the light is green. Consider whether you need to make any changes to the standard Observer pattern to make this work.

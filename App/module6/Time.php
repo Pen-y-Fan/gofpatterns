@@ -59,6 +59,7 @@ final class Time implements SplSubject
     {
         if (static::$currentTime < static::$endOfTime) {
             static::$currentTime++;
+            static::$instance->notify();
         } else {
             static::$instance = null;
             static::$currentTime = 0;
@@ -73,7 +74,6 @@ final class Time implements SplSubject
     {
         return static::$currentTime;
     }
-
 
     /**
      * add an observer, part of SplSubject Interface
@@ -105,7 +105,7 @@ final class Time implements SplSubject
     public function notify(): void
     {
         foreach (static::$observers as $observer) {
-            $observer->update(static::$currentTime);
+            $observer->update(static::$instance);
         }
     }
 

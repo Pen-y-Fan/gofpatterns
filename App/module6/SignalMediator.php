@@ -82,7 +82,7 @@ class SignalMediator
                 $this->southWalkSign->requestPassage();
                 $this->eastWalkSign->changeState(); // go->Caution
                 $this->westWalkSign->changeState(); // go->Caution
-                Time::init(12); // Inf? Or min?
+                Time::init(12);
                 break;
 
             case 3:
@@ -92,7 +92,7 @@ class SignalMediator
                 $this->southWalkSign->requestPassage();
                 $this->eastWalkSign->changeState(); // Caution->Stop
                 $this->westWalkSign->changeState(); // Caution->Stop
-                Time::init(5); // Inf? Or min?
+                Time::init(5);
                 break;
 
             case 4:
