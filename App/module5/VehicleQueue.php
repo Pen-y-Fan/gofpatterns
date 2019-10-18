@@ -86,12 +86,16 @@ class VehicleQueue
 
     /**
      * Finally, list() is a method intended mostly for
-     * debugging that prints the list of vehicles in the queue on the console
+     * debugging that returns the list of vehicles (classes) in the queue
      *
      * @return void
      */
-    public function list(): void
+    public function list(): array
     {
-        //
+        $list = [];
+        foreach ($this->theQueue as $vehicle) {
+            $list[] = get_class($vehicle);
+        }
+        return $list;
     }
 }
