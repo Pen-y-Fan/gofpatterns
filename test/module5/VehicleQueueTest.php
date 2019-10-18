@@ -35,4 +35,19 @@ class VehicleQueueTest extends TestCase
         $queue->leave();
         $this->assertSame(0, $queue->getSize());
     }
+
+    public function testOneHundredVehiclesQueueCanBeCreated(): void
+    {
+        // Will create only cars, of length 6.0 x 100 = 600.0
+        $queue = new VehicleQueue(1, new ConcreteVehicleFactory(1, 0, 0, 0));
+
+        for ($i = 0; $i < 100; $i++) {
+            $queue->enter();
+        }
+        $this->assertSame(100, $queue->getSize());
+        $this->assertSame(600.0, $queue->getLength());
+        $list = $queue->list();
+        $this->assertSame('App\module4\Car', $list[0]);
+        $this->assertSame('App\module4\Car', $list[99]);
+    }
 }
