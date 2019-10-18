@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\module6\SignalMediator" namespace="App\module6" name="SignalMediator" abstract="false" final="false" start="12" end="153">
+  <file path="C:/laragon/www/gofpatterns/App/module6" file="SignalMediator.php" realpath="C:/laragon/www/gofpatterns/App/module6/SignalMediator.php" size="4279" time="2019-10-18T13:31:39+01:00" unixtime="1571401899" sha1="c3e5b76278bb0abe42549a15b5591d3b7f4bf503" relative="module6/SignalMediator.php"/>
+  <docblock>
+    <description compact="https://www.gofpatterns.com/design-patterns/module6/signalMediator-class-exercise-result.php?exerciseInput=%3C%3Fphp%0D%"/>
+  </docblock>
+  <member name="state" visibility="private" static="false" line="17">
+    <docblock>
+      <description/>
+      <var description="from 0 to (NUMBER_OF_STATES-1)" type="integer"/>
+    </docblock>
+  </member>
+  <constant type="integer" name="NUMBER_OF_STATES" value="7">
+    <docblock>
+      <description/>
+      <const value="Maximum number of states"/>
+    </docblock>
+  </constant>
+  <member name="eastWalkSign" visibility="private" static="false" line="27">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="App\module6\AbstractTrafficSignal" namespace="App\module6" name="AbstractTrafficSignal"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="westWalkSign" visibility="private" static="false" line="32">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="App\module6\AbstractTrafficSignal" namespace="App\module6" name="AbstractTrafficSignal"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="northWalkSign" visibility="private" static="false" line="37">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="App\module6\AbstractTrafficSignal" namespace="App\module6" name="AbstractTrafficSignal"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="southWalkSign" visibility="private" static="false" line="42">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="App\module6\AbstractTrafficSignal" namespace="App\module6" name="AbstractTrafficSignal"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="44" end="55" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="Stop" line="48"/>
+      <comment value="Stop" line="49"/>
+      <comment value="Walk" line="51"/>
+      <comment value="Walk" line="52"/>
+    </inline>
+  </constructor>
+  <method name="changeState" start="57" end="122" abstract="false" final="false" static="false" visibility="public">
+    <return type="void" nullable="false"/>
+  </method>
+  <method name="getEastWalkSign" start="124" end="127" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getWestWalkSign" start="129" end="132" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getNorthWalkSign" start="134" end="137" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getSouthWalkSign" start="139" end="142" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getState" start="149" end="152" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="getState will return the current state"/>
+      <return type="integer"/>
+    </docblock>
+    <return type="int" nullable="false"/>
+  </method>
+</class>

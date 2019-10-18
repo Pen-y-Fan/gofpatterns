@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\module2\AbstractTrafficSignal" namespace="App\module2" name="AbstractTrafficSignal" abstract="true" final="false" start="7" end="61">
+  <file path="C:/laragon/www/gofpatterns/App/module2" file="AbstractTrafficSignal.php" realpath="C:/laragon/www/gofpatterns/App/module2/AbstractTrafficSignal.php" size="1261" time="2019-10-08T16:58:22+01:00" unixtime="1570550302" sha1="b4ec5b8831df570553bbd2d48f7addb0a1a7ec55" relative="module2/AbstractTrafficSignal.php"/>
+  <constant type="{unknown}" name="GO" value="0"/>
+  <constant type="{unknown}" name="CAUTION" value="1"/>
+  <constant type="{unknown}" name="STOP" value="2"/>
+  <constant type="{unknown}" name="NUMBER_OF_STATES" value="3"/>
+  <member name="passageRequested" default="false" type="boolean" visibility="public" static="false" line="20"/>
+  <member name="state" default="" type="{unknown}" constant="self::STOP" visibility="public" static="false" line="23"/>
+  <method name="getPassageRequested" start="25" end="28" abstract="false" final="false" static="false" visibility="public">
+    <return type="bool" nullable="false"/>
+  </method>
+  <method name="requestPassage" start="30" end="35" abstract="false" final="false" static="false" visibility="public">
+    <return type="void" nullable="false"/>
+  </method>
+  <method name="passageGranted" start="37" end="40" abstract="false" final="false" static="false" visibility="public">
+    <return type="void" nullable="false"/>
+  </method>
+  <method name="changeState" start="42" end="48" abstract="false" final="false" static="false" visibility="public">
+    <return type="void" nullable="false"/>
+  </method>
+  <method name="getState" start="50" end="53" abstract="false" final="false" static="false" visibility="public">
+    <return type="int" nullable="false"/>
+  </method>
+  <method name="getMessage" start="54" end="54" abstract="true" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="__toString" start="56" end="60" abstract="false" final="false" static="false" visibility="public"/>
+  <extenders>
+    <extender full="App\module2\TrafficLight" namespace="App\module2" name="TrafficLight"/>
+    <extender full="App\module2\WalkSign" namespace="App\module2" name="WalkSign"/>
+  </extenders>
+</class>

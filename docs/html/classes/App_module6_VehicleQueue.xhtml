@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - App\module6\VehicleQueue</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#App_module6">App\module6</a>
+          </li>
+          <li class="separator">VehicleQueue</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/module6/VehicleQueue.php.xhtml#line13">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>App\module6\</small>VehicleQueue</h1>
+        <h4/>
+        <p/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class VehicleQueue
+                implements
+                <a title="SplObserver" href="../interfaces/SplObserver.xhtml">SplObserver</a>
+            {<br/><ul class="none"><li>// members</li><li>protected <span title="SplObjectStorage">SplObjectStorage</span> <a href="#members">$theQueue</a>;
+                    </li><li>protected integer <a href="#members">$queueLength</a> =
+                        0;
+                    </li><li>protected  <a href="#members">$vehiclesPerSecond</a>;
+                    </li><li>protected <span title="App\module2\TrafficLight">TrafficLight</span> <a href="#members">$signal</a>;
+                    </li><li>protected <span title="App\module4\ConcreteVehicleFactory">ConcreteVehicleFactory</span> <a href="#members">$theFactory</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="App\module6\VehicleQueue" href="../classes/App_module6_VehicleQueue/__construct.xhtml">__construct</a>()
+                    </li><li>public void <a title="App\module6\VehicleQueue" href="../classes/App_module6_VehicleQueue/enter.xhtml">enter</a>()
+                    </li><li>public void <a title="App\module6\VehicleQueue" href="../classes/App_module6_VehicleQueue/leave.xhtml">leave</a>()
+                    </li><li>public float <a title="App\module6\VehicleQueue" href="../classes/App_module6_VehicleQueue/getLength.xhtml">getLength</a>()
+                    </li><li>public int <a title="App\module6\VehicleQueue" href="../classes/App_module6_VehicleQueue/getSize.xhtml">getSize</a>()
+                    </li><li>public array <a title="App\module6\VehicleQueue" href="../classes/App_module6_VehicleQueue/list.xhtml">list</a>()
+                    </li><li>public void <a title="App\module6\VehicleQueue" href="../classes/App_module6_VehicleQueue/update.xhtml">update</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Implements</h4>
+          <ul>
+            <li>
+              <a title="SplObserver" href="../interfaces/SplObserver.xhtml">SplObserver</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="queueLength"><strong>$queueLength</strong>
+                —
+                float</li>
+            <li id="signal"><strong>$signal</strong>
+                —
+                <a title="App\module2\TrafficLight" href="../classes/App_module2_TrafficLight.xhtml">App\module2\TrafficLight</a></li>
+            <li id="theFactory"><strong>$theFactory</strong>
+                —
+                <a title="App\module4\ConcreteVehicleFactory" href="../classes/App_module4_ConcreteVehicleFactory.xhtml">App\module4\ConcreteVehicleFactory</a></li>
+            <li id="theQueue"><strong>$theQueue</strong>
+                —
+                <a title="SplObjectStorage" href="../classes/SplObjectStorage.xhtml">SplObjectStorage</a></li>
+            <li id="vehiclesPerSecond"><strong>$vehiclesPerSecond</strong>
+                —
+                float</li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="__construct">
+              <a title="App\module6\VehicleQueue" href="../classes/App_module6_VehicleQueue/__construct.xhtml">__construct()</a>
+            </li>
+            <li id="enter"><a title="App\module6\VehicleQueue" href="../classes/App_module6_VehicleQueue/enter.xhtml">enter()</a>
+                — The enter() method is called each second.</li>
+            <li id="getLength"><a title="App\module6\VehicleQueue" href="../classes/App_module6_VehicleQueue/getLength.xhtml">getLength()</a>
+                — The getLength() method returns the total length in meters of the queue;   that is the sum of the lengths of the individual vehicles.</li>
+            <li id="getSize"><a title="App\module6\VehicleQueue" href="../classes/App_module6_VehicleQueue/getSize.xhtml">getSize()</a>
+                — The getSize() method, returns the number of vehicles in the queue.</li>
+            <li id="leave"><a title="App\module6\VehicleQueue" href="../classes/App_module6_VehicleQueue/leave.xhtml">leave()</a>
+                — The leave() method is invoked whenever the corresponding light is green.</li>
+            <li id="list"><a title="App\module6\VehicleQueue" href="../classes/App_module6_VehicleQueue/list.xhtml">list()</a>
+                — Finally, list() is a method intended mostly for debugging that returns the list of vehicles (classes) in the queue</li>
+            <li id="update">
+              <a title="App\module6\VehicleQueue" href="../classes/App_module6_VehicleQueue/update.xhtml">update()</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

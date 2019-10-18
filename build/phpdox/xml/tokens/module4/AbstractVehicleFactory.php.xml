@@ -1,0 +1,411 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="C:/laragon/www/gofpatterns/App/module4" file="AbstractVehicleFactory.php" realpath="C:/laragon/www/gofpatterns/App/module4/AbstractVehicleFactory.php" size="1778" time="2019-10-10T19:22:29+01:00" unixtime="1570731749" sha1="4769924e820ebd8301ade1af7bb96e6b0b8e0655" relative="module4/AbstractVehicleFactory.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_DECLARE">declare</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">strict_types</token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_NAMESPACE">namespace</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">App</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">module4</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="6"/>
+  <line no="7">
+    <token name="T_ABSTRACT">abstract</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLASS">class</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">AbstractVehicleFactory</token>
+  </line>
+  <line no="8">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="9">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PROTECTED">protected</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$chanceCar</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="10">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PROTECTED">protected</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$chanceBus</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="11">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PROTECTED">protected</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$chanceBicycle</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="12">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PROTECTED">protected</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$chancePedestrian</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PROTECTED">protected</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">__construct</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="15">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_STRING">float</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$chanceCar</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DNUMBER">80.0</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="16">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_STRING">float</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$chanceBus</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DNUMBER">10.0</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="17">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_STRING">float</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$chanceBicycle</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DNUMBER">10.0</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="18">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_STRING">float</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$chancePedestrian</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DNUMBER">0.0</token>
+  </line>
+  <line no="19">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="20">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// Negative probabilities make no sense.</token>
+  </line>
+  <line no="21">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// Therefore, enforce the constraint that</token>
+  </line>
+  <line no="22">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// each probability is greater than zero</token>
+  </line>
+  <line no="23">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$chanceCar</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_LT">&lt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DNUMBER">0.0</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="24">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_VARIABLE">$chanceCar</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DNUMBER">0.0</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="25">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="26">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$chanceBus</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_LT">&lt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DNUMBER">0.0</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="27">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_VARIABLE">$chanceBus</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DNUMBER">0.0</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="28">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="29">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$chanceBicycle</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_LT">&lt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DNUMBER">0.0</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="30">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_VARIABLE">$chanceBicycle</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DNUMBER">0.0</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="31">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="32">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$chancePedestrian</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_LT">&lt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DNUMBER">0.0</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="33">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_VARIABLE">$chancePedestrian</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DNUMBER">0.0</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="34">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="35">
+    <token name="T_WHITESPACE">        </token>
+  </line>
+  <line no="36">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// Since you must enforce the constraint that the sum</token>
+  </line>
+  <line no="37">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// of the probabilities is 1.0 (100%), you</token>
+  </line>
+  <line no="38">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// have to normalize. You should not assume that</token>
+  </line>
+  <line no="39">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// the arguments add to 1.00 (100%)</token>
+  </line>
+  <line no="40">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// This has the beneficial side effect of allowing</token>
+  </line>
+  <line no="41">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// clients to use either floating point numbers between</token>
+  </line>
+  <line no="42">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// 0.0 and 1.0 or percentages between 0 and 100 as they prefer.</token>
+  </line>
+  <line no="43">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$normalization</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$chanceCar</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_PLUS">+</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$chanceBus</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_PLUS">+</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$chanceBicycle</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_PLUS">+</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$chancePedestrian</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="44"/>
+  <line no="45">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// avoid division by zero</token>
+  </line>
+  <line no="46">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$normalization</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="47">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_VARIABLE">$normalization</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DNUMBER">1.0</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="48">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="49"/>
+  <line no="50">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">chanceCar</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$chanceCar</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DIV">/</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$normalization</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="51">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">chanceBus</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$chanceBus</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DIV">/</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$normalization</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="52">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">chanceBicycle</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$chanceBicycle</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DIV">/</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$normalization</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="53">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">chancePedestrian</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$chancePedestrian</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DIV">/</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$normalization</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="54">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="55"/>
+  <line no="56">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_ABSTRACT">abstract</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">createVehicle</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="57">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="58"/>
+</source>

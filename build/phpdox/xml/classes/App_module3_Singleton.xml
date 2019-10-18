@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\module3\Singleton" namespace="App\module3" name="Singleton" abstract="false" final="true" start="11" end="51">
+  <file path="C:/laragon/www/gofpatterns/App/module3" file="Singleton.php" realpath="C:/laragon/www/gofpatterns/App/module3/Singleton.php" size="1049" time="2019-10-08T19:15:00+01:00" unixtime="1570558500" sha1="ae6b4caf191ec2239af9650fd5d72c4193733da9" relative="module3/Singleton.php"/>
+  <docblock>
+    <description compact="Source: DesignPatterns\Creational\Singleton"/>
+  </docblock>
+  <member name="instance" default="NULL" visibility="private" static="true" line="16">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="App\module3\Singleton" namespace="App\module3" name="Singleton"/>
+      </var>
+    </docblock>
+  </member>
+  <method name="getInstance" start="21" end="28" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="gets the instance via lazy initialization (created on first usage)"/>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="App\module3\Singleton" namespace="App\module3" name="Singleton"/>
+    </return>
+  </method>
+  <constructor name="__construct" start="34" end="36" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="is not allowed to call from outside to prevent from creating multiple instances, to use the singleton, you have to obtain the instance from Singleton::getInstance() instead"/>
+    </docblock>
+  </constructor>
+  <method name="__clone" start="41" end="43" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="prevent the instance from being cloned (which would create a second instance of it)"/>
+    </docblock>
+  </method>
+  <method name="__wakeup" start="48" end="50" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="prevent from being unserialized (which would create a second instance of it)"/>
+    </docblock>
+  </method>
+</class>

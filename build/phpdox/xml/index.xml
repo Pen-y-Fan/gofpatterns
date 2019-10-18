@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="C:/laragon/www/gofpatterns/App">
+  <namespace name="App\module2">
+    <class name="AbstractTrafficSignal" src="module2/AbstractTrafficSignal.php" xml="classes/App_module2_AbstractTrafficSignal.xml"/>
+    <class name="TrafficLight" src="module2/TrafficLight.php" xml="classes/App_module2_TrafficLight.xml"/>
+    <class name="WalkSign" src="module2/WalkSign.php" xml="classes/App_module2_WalkSign.xml"/>
+  </namespace>
+  <namespace name="App\module3">
+    <class name="Clock" src="module3/Clock.php" xml="classes/App_module3_Clock.xml"/>
+    <class name="Singleton" src="module3/Singleton.php" description="Source: DesignPatterns\Creational\Singleton" xml="classes/App_module3_Singleton.xml"/>
+  </namespace>
+  <namespace name="App\module4">
+    <class name="AbstractVehicle" src="module4/AbstractVehicle.php" xml="classes/App_module4_AbstractVehicle.xml"/>
+    <class name="AbstractVehicleFactory" src="module4/AbstractVehicleFactory.php" xml="classes/App_module4_AbstractVehicleFactory.xml"/>
+    <class name="Bicycle" src="module4/Bicycle.php" xml="classes/App_module4_Bicycle.xml"/>
+    <class name="Bus" src="module4/Bus.php" xml="classes/App_module4_Bus.xml"/>
+    <class name="Car" src="module4/Car.php" xml="classes/App_module4_Car.xml"/>
+    <class name="ConcreteVehicleFactory" src="module4/ConcreteVehicleFactory.php" xml="classes/App_module4_ConcreteVehicleFactory.xml"/>
+    <class name="Pedestrian" src="module4/Pedestrian.php" xml="classes/App_module4_Pedestrian.xml"/>
+  </namespace>
+  <namespace name="App\module5">
+    <class name="VehicleQueue" src="module5/VehicleQueue.php" xml="classes/App_module5_VehicleQueue.xml"/>
+  </namespace>
+  <namespace name="App\module6">
+    <class name="SignalMediator" src="module6/SignalMediator.php" description="https://www.gofpatterns.com/design-patterns/module6/signalMediator-class-exercise-result.php?exerciseInput=%3C%3Fphp%0D%" xml="classes/App_module6_SignalMediator.xml"/>
+    <class name="Time" src="module6/Time.php" xml="classes/App_module6_Time.xml"/>
+    <class name="TimeObserver" src="module6/TimeObserver.php" description="Observer,that who receives news" xml="classes/App_module6_TimeObserver.xml"/>
+    <class name="VehicleQueue" src="module6/VehicleQueue.php" xml="classes/App_module6_VehicleQueue.xml"/>
+  </namespace>
+  <namespace name="App\module7">
+    <class name="SignalMediator" src="module7/SignalMediator.php" description="Signal Mediator controls the traffic light system" xml="classes/App_module7_SignalMediator.xml"/>
+  </namespace>
+  <namespace name="">
+    <interface name="SplSubject" xml="interfaces/SplSubject.xml"/>
+    <interface name="SplObserver" xml="interfaces/SplObserver.xml"/>
+  </namespace>
+</index>

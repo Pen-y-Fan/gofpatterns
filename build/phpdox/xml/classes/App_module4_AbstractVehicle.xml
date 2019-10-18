@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\module4\AbstractVehicle" namespace="App\module4" name="AbstractVehicle" abstract="true" final="false" start="7" end="55">
+  <file path="C:/laragon/www/gofpatterns/App/module4" file="AbstractVehicle.php" realpath="C:/laragon/www/gofpatterns/App/module4/AbstractVehicle.php" size="1150" time="2019-10-10T15:06:03+01:00" unixtime="1570716363" sha1="ca5578c3c8f56739f36451bcd69b3dd33a0b38ed" relative="module4/AbstractVehicle.php"/>
+  <constant type="{unknown}" name="MIN_SPEED" value="0"/>
+  <member name="speed" default="0" type="integer" visibility="protected" static="false" line="10"/>
+  <member name="maxSpeed" visibility="protected" static="false" line="11"/>
+  <member name="length" visibility="protected" static="false" line="12"/>
+  <method name="getSpeed" start="14" end="17" abstract="false" final="false" static="false" visibility="public">
+    <return type="float" nullable="false"/>
+  </method>
+  <method name="getMaxSpeed" start="19" end="22" abstract="false" final="false" static="false" visibility="public">
+    <return type="float" nullable="false"/>
+  </method>
+  <method name="getLength" start="24" end="27" abstract="false" final="false" static="false" visibility="public">
+    <return type="float" nullable="false"/>
+  </method>
+  <method name="accelerate" start="29" end="37" abstract="false" final="false" static="false" visibility="public">
+    <return type="void" nullable="false"/>
+    <parameter name="deltaV" byreference="false" type="float"/>
+  </method>
+  <method name="decelerate" start="39" end="47" abstract="false" final="false" static="false" visibility="public">
+    <return type="void" nullable="false"/>
+    <parameter name="deltaV" byreference="false" type="float"/>
+  </method>
+  <method name="__toString" start="51" end="54" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <extenders>
+    <extender full="App\module4\Bicycle" namespace="App\module4" name="Bicycle"/>
+    <extender full="App\module4\Bus" namespace="App\module4" name="Bus"/>
+    <extender full="App\module4\Car" namespace="App\module4" name="Car"/>
+    <extender full="App\module4\Pedestrian" namespace="App\module4" name="Pedestrian"/>
+  </extenders>
+</class>

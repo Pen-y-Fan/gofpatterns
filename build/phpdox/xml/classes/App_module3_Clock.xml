@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\module3\Clock" namespace="App\module3" name="Clock" abstract="false" final="true" start="7" end="73">
+  <file path="C:/laragon/www/gofpatterns/App/module3" file="Clock.php" realpath="C:/laragon/www/gofpatterns/App/module3/Clock.php" size="1233" time="2019-10-08T19:24:09+01:00" unixtime="1570559049" sha1="6dcd7a4cc796e3a5ac276990cfca4332dd53604b" relative="module3/Clock.php"/>
+  <member name="currentTime" default="0" type="integer" visibility="private" static="true" line="12">
+    <docblock>
+      <description/>
+      <var type="integer"/>
+    </docblock>
+  </member>
+  <member name="endOfTime" visibility="private" static="true" line="17">
+    <docblock>
+      <description/>
+      <var type="integer"/>
+    </docblock>
+  </member>
+  <member name="instance" default="NULL" visibility="private" static="true" line="22">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="App\module3\Clock" namespace="App\module3" name="Clock"/>
+      </var>
+    </docblock>
+  </member>
+  <method name="time" start="29" end="38" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description/>
+      <param type="integer" variable="$endTime"/>
+      <return type="object">
+        <type full="App\module3\Clock" namespace="App\module3" name="Clock"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="App\module3\Clock" namespace="App\module3" name="Clock"/>
+    </return>
+    <parameter name="endTime" byreference="false" type="int"/>
+  </method>
+  <method name="run" start="43" end="52" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="App\module3\void" namespace="App\module3" name="void"/>
+      </return>
+    </docblock>
+    <return type="void" nullable="false"/>
+  </method>
+  <method name="getTime" start="57" end="60" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description/>
+      <return type="integer"/>
+    </docblock>
+    <return type="int" nullable="false"/>
+  </method>
+  <constructor name="__construct" start="62" end="64" abstract="false" final="false" static="false" visibility="private"/>
+  <method name="__clone" start="66" end="68" abstract="false" final="false" static="false" visibility="private"/>
+  <method name="__wakeup" start="70" end="72" abstract="false" final="false" static="false" visibility="private"/>
+</class>

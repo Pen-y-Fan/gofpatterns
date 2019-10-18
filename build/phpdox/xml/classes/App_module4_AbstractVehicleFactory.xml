@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\module4\AbstractVehicleFactory" namespace="App\module4" name="AbstractVehicleFactory" abstract="true" final="false" start="7" end="57">
+  <file path="C:/laragon/www/gofpatterns/App/module4" file="AbstractVehicleFactory.php" realpath="C:/laragon/www/gofpatterns/App/module4/AbstractVehicleFactory.php" size="1778" time="2019-10-10T19:22:29+01:00" unixtime="1570731749" sha1="4769924e820ebd8301ade1af7bb96e6b0b8e0655" relative="module4/AbstractVehicleFactory.php"/>
+  <member name="chanceCar" visibility="protected" static="false" line="9"/>
+  <member name="chanceBus" visibility="protected" static="false" line="10"/>
+  <member name="chanceBicycle" visibility="protected" static="false" line="11"/>
+  <member name="chancePedestrian" visibility="protected" static="false" line="12"/>
+  <constructor name="__construct" start="14" end="54" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="chanceCar" byreference="false" type="float" default="80.0"/>
+    <parameter name="chanceBus" byreference="false" type="float" default="10.0"/>
+    <parameter name="chanceBicycle" byreference="false" type="float" default="10.0"/>
+    <parameter name="chancePedestrian" byreference="false" type="float" default="0.0"/>
+    <inline>
+      <comment value="Negative probabilities make no sense." line="20"/>
+      <comment value="Therefore, enforce the constraint that" line="21"/>
+      <comment value="each probability is greater than zero" line="22"/>
+      <comment value="Since you must enforce the constraint that the sum" line="36"/>
+      <comment value="of the probabilities is 1.0 (100%), you" line="37"/>
+      <comment value="have to normalize. You should not assume that" line="38"/>
+      <comment value="the arguments add to 1.00 (100%)" line="39"/>
+      <comment value="This has the beneficial side effect of allowing" line="40"/>
+      <comment value="clients to use either floating point numbers between" line="41"/>
+      <comment value="0.0 and 1.0 or percentages between 0 and 100 as they prefer." line="42"/>
+      <comment value="avoid division by zero" line="45"/>
+    </inline>
+  </constructor>
+  <method name="createVehicle" start="56" end="56" abstract="true" final="false" static="false" visibility="public"/>
+  <extenders>
+    <extender full="App\module4\ConcreteVehicleFactory" namespace="App\module4" name="ConcreteVehicleFactory"/>
+  </extenders>
+</class>
