@@ -4,15 +4,7 @@
 /.vscode
 
 # PHPUnit
-
-phpunit.xml
 /.phpunit.result.cache
 
-# build
-
-composer.phar
+# vendor
 /vendor/
-/_build/
-
-# translations
-*.mo
