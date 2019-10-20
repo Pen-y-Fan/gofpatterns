@@ -1,14 +1,32 @@
 {
+  "name": "pen-y-fan/gofpatterns",
+  "description": "project is based on the The GoF patterns course website.",
+  "type": "project",
+  "keywords": [
+    "GoFpatterns",
+    "phppatterns",
+    "patterns"
+  ],
+  "license": "MIT",
   "require-dev": {
-    "phpunit/phpunit": "8.4",
-    "theseer/phpdox": "^0.12.0"
+    "phpunit/phpunit": "^8.4",
+    "theseer/phpdox": "^0.12.0",
+    "phpstan/phpstan": "^0.11.17"
   },
   "autoload": {
     "psr-4": {
       "App\\": "App/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "test/"
+    }
+  },
   "scripts": {
-    "test": "vendor\\bin\\phpunit.bat"
+    "phpstan": "vendor/bin/phpstan analyse -l 7 -c phpstan.neon app test",
+    "test": "vendor/bin/phpunit",
+    "wphpstan": "vendor\\bin\\phpstan analyse app test --level 7",
+    "wtest": "vendor\\bin\\phpunit.bat"
   }
 }
