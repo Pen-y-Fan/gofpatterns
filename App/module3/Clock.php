@@ -18,6 +18,7 @@ final class Clock
 
     /**
      * @var Clock
+     * @var null
      */
     private static $instance = null;
 

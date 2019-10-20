@@ -6,6 +6,7 @@ namespace App\module7;
 
 use App\module2\AbstractTrafficSignal;
 use App\module6\Time;
+use Exception;
 use SplObserver;
 use SplSubject;
 
@@ -43,6 +44,11 @@ class SignalMediator implements SplObserver
      * @var AbstractTrafficSignal
      */
     private $southWalkSign;
+
+    /**
+     * @var integer
+     */
+    private $nextInterval = 0;
 
     public function __construct(
         AbstractTrafficSignal $eastTrafficLight,
@@ -161,6 +167,12 @@ class SignalMediator implements SplObserver
         return $this->state;
     }
 
+    /**
+     * update method part of SplSubject
+     *
+     * @param Time $subject
+     * @return void
+     */
     public function update(SplSubject $subject): void
     {
         if ($subject::getTime() >= $this->nextInterval) {

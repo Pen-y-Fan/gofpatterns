@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace App\module6;
 
+use App\module2\AbstractTrafficSignal;
 use App\module2\WalkSign;
+use Exception;
 
 /**
  * https://www.gofpatterns.com/design-patterns/module6/signalMediator-class-exercise-result.php?exerciseInput=%3C%3Fphp%0D%

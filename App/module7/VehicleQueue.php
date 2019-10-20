@@ -31,7 +31,8 @@ class VehicleQueue implements SplObserver
     protected $vehiclesPerSecond;
 
     /**
-     * @var TrafficLight|WalkSign
+     * @var TrafficLight
+     * @var WalkSign
      */
     protected $signal;
 
@@ -81,6 +82,10 @@ class VehicleQueue implements SplObserver
     /**
      * The getLength() method returns the total length in meters of the queue;
      *   that is the sum of the lengths of the individual vehicles.
+     *
+     * @var float $length
+     * @var ConcreteVehicleFactory $vehicle
+     * @return float
      */
     public function getLength(): float
     {
@@ -107,7 +112,7 @@ class VehicleQueue implements SplObserver
      * Finally, list() is a method intended mostly for
      * debugging that returns the list of vehicles (classes) in the queue
      *
-     * @return void
+     * @return array
      */
     public function list(): array
     {
@@ -118,6 +123,10 @@ class VehicleQueue implements SplObserver
         return $list;
     }
 
+    /**
+     * @param Time $subject
+     * @return void
+     */
     public function update(SplSubject $subject): void
     {
         $this->enter();

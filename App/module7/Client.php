@@ -64,6 +64,10 @@ class Client implements SplObserver
         return true;
     }
 
+    /**
+     * @param Time $subject
+     * @return void
+     */
     public function update(SplSubject $subject): void
     {
         echo $subject->getTime() . "\t";

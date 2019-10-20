@@ -8,14 +8,15 @@ use App\module2\AbstractTrafficSignal;
 use App\module2\TrafficLight;
 use App\module2\WalkSign;
 use App\module4\ConcreteVehicleFactory;
-use SplObjectStorage;
+use App\module6\Time;
+use SplQueue;
 use SplObserver;
 use SplSubject;
 
 class VehicleQueue implements SplObserver
 {
     /**
-     * @var SplObjectStorage
+     * @var SplQueue
      */
     protected $theQueue;
 
@@ -30,7 +31,10 @@ class VehicleQueue implements SplObserver
     protected $vehiclesPerSecond;
 
     /**
-     * @var TrafficLight|WalkSign
+     * @var AbstractTrafficSignal
+     * @var TrafficLight
+     * @var WalkSign
+
      */
     protected $signal;
 
@@ -44,7 +48,7 @@ class VehicleQueue implements SplObserver
         ConcreteVehicleFactory $theFactory,
         AbstractTrafficSignal $signal
     ) {
-        $this->theQueue = new SplObjectStorage();
+        $this->theQueue = new SplQueue();
         $this->vehiclesPerSecond = $vehiclesPerSecond;
         $this->theFactory = $theFactory;
         $this->signal = $signal;
@@ -60,8 +64,7 @@ class VehicleQueue implements SplObserver
     {
         $r = rand(1, 1000) / 1000;
         if ($r <= $this->vehiclesPerSecond) {
-            $this->theQueue->attach($this->theFactory->createVehicle());
-            $this->queueLength += $this->theQueue->current()->getLength();
+            $this->theQueue->enqueue($this->theFactory->createVehicle());
         }
     }
 
@@ -74,18 +77,26 @@ class VehicleQueue implements SplObserver
     {
         $this->theQueue->rewind();
         if ($this->theQueue->valid()) {
-            $this->queueLength -= $this->theQueue->current()->getLength();
-            $this->theQueue->detach($this->theQueue->current());
+            $this->theQueue->dequeue();
         }
     }
 
     /**
      * The getLength() method returns the total length in meters of the queue;
      *   that is the sum of the lengths of the individual vehicles.
+     *
+     * @var float $length
+     * @var ConcreteVehicleFactory $vehicle
+     * @return float
      */
     public function getLength(): float
     {
-        return $this->queueLength;
+        $length = 0;
+        $this->theQueue->rewind();
+        foreach ($this->theQueue as $vehicle) {
+            $length += $vehicle->getLength();
+        }
+        return $length;
     }
 
     /**
@@ -102,7 +113,7 @@ class VehicleQueue implements SplObserver
      * Finally, list() is a method intended mostly for
      * debugging that returns the list of vehicles (classes) in the queue
      *
-     * @return void
+     * @return array
      */
     public function list(): array
     {
@@ -113,6 +124,12 @@ class VehicleQueue implements SplObserver
         return $list;
     }
 
+    /**
+     * update method, part of SplSubject
+     *
+     * @param Time $subject
+     * @return void
+     */
     public function update(SplSubject $subject): void
     {
         if (

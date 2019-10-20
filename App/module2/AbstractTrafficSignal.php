@@ -55,7 +55,7 @@ abstract class AbstractTrafficSignal
 
     public function __toString()
     {
-        return "[" + $this->getClass() . ": " . $this->direction . " "
-        . $this->getMessage() . " " . $this->passageRequested . "]";
+        return "[" . get_class($this) . ": " .
+        $this->getMessage() . " " . $this->passageRequested . "]";
     }
 }

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\module5;
+namespace Tests\module6;
 
 use App\module2\TrafficLight;
 use App\module4\ConcreteVehicleFactory;

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\module6;
 
-use SplObjectStorage;
+use SplQueue;
 use SplObserver;
 use SplSubject;
 
@@ -22,11 +22,12 @@ final class Time implements SplSubject
 
     /**
      * @var Time
+     * @var null
      */
     private static $instance = null;
 
     /**
-     * @var SplObjectStorage
+     * @var SplQueue
      */
     private static $observers;
 
@@ -40,7 +41,7 @@ final class Time implements SplSubject
             static::$instance = new static();
             static::$endOfTime = $endTime;
             static::$currentTime = 0;
-            static::$observers = new SplObjectStorage();
+            static::$observers = new SplQueue();
         }
     }
 
@@ -58,7 +59,7 @@ final class Time implements SplSubject
      */
     public static function run(): void
     {
-        if (static::$currentTime < static::$endOfTime) {
+        if (static::$currentTime < static::$endOfTime && static::$instance != null) {
             static::$currentTime++;
             static::$instance->notify();
         } else {
@@ -84,7 +85,7 @@ final class Time implements SplSubject
      */
     public function attach(SplObserver $observer): void
     {
-        static::$observers->attach($observer);
+        static::$observers->enqueue($observer);
     }
 
     /**
@@ -95,16 +96,18 @@ final class Time implements SplSubject
      */
     public function detach(SplObserver $observer): void
     {
-        static::$observers->detach($observer);
+        // Not implemented
     }
 
     /**
      * Notify all observers of the new time, part of SplSubject Interface
      *
+     * @var SplObserver $observer
      * @return void
      */
     public function notify(): void
     {
+        /* @var SplObserver $observer */
         foreach (static::$observers as $observer) {
             $observer->update(static::$instance);
         }
