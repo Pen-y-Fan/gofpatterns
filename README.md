@@ -16,7 +16,7 @@ The purpose of this project is to compliment the GoFPatterns website, while work
 
 Each module has a separated namespace within the App folder. Each course project (design pattern) is tested using PHPUnit.
 
-The website's core course material has note been copied, only an explanation of the project, which is a mark down file in the same module as the course project.
+The website's core course material has not been copied, only an explanation of the project, which is a mark down file in the same module as the course project.
 
 ## Installation
 
@@ -91,8 +91,8 @@ composer test
 
 ## Errors and Omissions (E&O)
 
-As I am learning patterns and programming there may be some errors and omissions. Feel free to post details of any
+As I am learning patterns and programming there may be some errors and omissions. Feel free to post details of any.
 
 ## Licence
 
-MIT
+MIT License
