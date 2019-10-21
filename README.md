@@ -4,13 +4,14 @@
 
 This project is based on the The GoF patterns course website, it is separated into modules for each subject:
 
-- [Design Patterns](https://www.gofpatterns.com/design-patterns/module1/intro-design-patterns.php) - module 1
-- [Defining Patterns](https://www.gofpatterns.com/design-patterns/module2/intro-defining-design-patterns.php) - module 2
-- [Singleton Patterns](https://www.gofpatterns.com/design-patterns/module3/intro-singleton-design-pattern.php) - module 3
-- [Creational Patterns](https://www.gofpatterns.com/design-patterns/module4/intro-creational-patterns.php) - module 4
-- [Structural Patterns](https://www.gofpatterns.com/design-patterns/module5/intro-structural-designPatterns.php) - module 5
-- [Behavioral Patterns](https://www.gofpatterns.com/design-patterns/module6/intro-behavioral-designPatterns.php) - module 6
-- [Designing Software](https://www.gofpatterns.com/design-patterns/module7/intro-designPattern-softwareDesign.php) - module 7
+- [GoFPatterns](https://www.gofpatterns.com/)
+  - [Design Patterns](https://www.gofpatterns.com/design-patterns/module1/intro-design-patterns.php) - module 1
+  - [Defining Patterns](https://www.gofpatterns.com/design-patterns/module2/intro-defining-design-patterns.php) - module 2
+  - [Singleton Patterns](https://www.gofpatterns.com/design-patterns/module3/intro-singleton-design-pattern.php) - module 3
+  - [Creational Patterns](https://www.gofpatterns.com/design-patterns/module4/intro-creational-patterns.php) - module 4
+  - [Structural Patterns](https://www.gofpatterns.com/design-patterns/module5/intro-structural-designPatterns.php) - module 5
+  - [Behavioral Patterns](https://www.gofpatterns.com/design-patterns/module6/intro-behavioral-designPatterns.php) - module 6
+  - [Designing Software](https://www.gofpatterns.com/design-patterns/module7/intro-designPattern-softwareDesign.php) - module 7
 
 The purpose of this project is to compliment the GoFPatterns website, while working through the course. The GoFPatterns site provided code in Java and C#, whenever possible the code from the website has been re-written into PHP
 
@@ -80,18 +81,48 @@ PHPUnit is used to run tests, from the root of the project, run:
 **Windows OS**:
 
 ```sh
-composer test
+composer wtest
 ```
 
 **Mac or Linux OS**:
 
 ```sh
-./vendor/bin/phpunit
+composer test
+```
+
+### 4. PHP Stan
+
+PHPStan has been also been installed as a dev dependency, this will run static analysis tests.
+
+```sh
+composer wphpstan
+```
+
+**Mac or Linux OS**:
+
+```sh
+composer phpstan
+```
+
+### 5. Documentation
+
+PHP Dox has been also been installed as a dev dependency, this will automatically create xml and html documentation. This has already been run and the documentation is location in the build (xml) and docs (html) directories.
+
+**Only** run if any classes, methods or properties are updated:
+
+```sh
+composer wphpdox
+```
+
+**Mac or Linux OS**:
+
+```sh
+composer phpdox
 ```
 
 ## Errors and Omissions (E&O)
 
-As I am learning patterns and programming there may be some errors and omissions. Feel free to post details of any.
+I am learning patterns and programming there may be some errors and omissions. Feel free to post details of any.
 
 ## Licence
 
