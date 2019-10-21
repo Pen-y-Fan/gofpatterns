@@ -8,9 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        php:
-          - "7.2"
-          - "7.3"
+        php: [7.2, 7.3]
     steps:
       - uses: actions/checkout@v1
 
@@ -26,8 +24,8 @@ jobs:
       - name: Install dependencies
         run: composer install --prefer-dist --no-progress --no-suggest
 
-      - name: Run test suite
+      - name: Tests
         run: composer run-script test
 
-      - name: Run static analysis
+      - name: Static analysis
         run: composer run-script phpstan
