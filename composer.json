@@ -25,7 +25,7 @@
   },
   "scripts": {
     "phpdox": "vendor/bin/phpdox",
-    "phpstan": "vendor/bin/phpstan analyse -l 7",
+    "phpstan": "vendor/bin/phpstan analyse app test -l 7",
     "test": "vendor/bin/phpunit",
     "wphpdox": "vendor\\bin\\phpdox.bat",
     "wphpstan": "vendor\\bin\\phpstan.bat analyse app test --level 7",
