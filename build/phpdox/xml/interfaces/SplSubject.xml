@@ -20,4 +20,4 @@
       <return type="void"/>
     </docblock>
   </method>
-<implementors><class full="App\module6\Time" namespace="App\module6" name="Time"/></implementors></interface>
+<implementors><class full="App\module6\Time" namespace="App\module6" name="Time"/><class full="App\module6\Time" namespace="App\module6" name="Time"/></implementors></interface>

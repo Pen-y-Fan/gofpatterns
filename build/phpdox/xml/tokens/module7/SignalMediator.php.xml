@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="C:/laragon/www/gofpatterns/App/module7" file="SignalMediator.php" realpath="C:/laragon/www/gofpatterns/App/module7/SignalMediator.php" size="4939" time="2019-10-18T17:41:39+01:00" unixtime="1571416899" sha1="ca41bc5f75ac18044d827ee4942a3065483a1b78" relative="module7/SignalMediator.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="C:/laragon/www/gofpatterns/App/module7" file="SignalMediator.php" realpath="C:/laragon/www/gofpatterns/App/module7/SignalMediator.php" size="5133" time="2019-10-20T21:00:19+00:00" unixtime="1571605219" sha1="3769208b0aab2f61b622419fd7710490f78f6435" relative="module7/SignalMediator.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
@@ -47,26 +47,32 @@
   <line no="9">
     <token name="T_USE">use</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">SplObserver</token>
+    <token name="T_STRING">Exception</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
   <line no="10">
     <token name="T_USE">use</token>
     <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">SplObserver</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="11">
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">SplSubject</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="11"/>
-  <line no="12">
+  <line no="12"/>
+  <line no="13">
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="13">
+  <line no="14">
     <token name="T_DOC_COMMENT"> * Signal Mediator controls the traffic light system</token>
   </line>
-  <line no="14">
+  <line no="15">
     <token name="T_DOC_COMMENT"> */</token>
   </line>
-  <line no="15">
+  <line no="16">
     <token name="T_CLASS">class</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">SignalMediator</token>
@@ -75,38 +81,38 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">SplObserver</token>
   </line>
-  <line no="16">
+  <line no="17">
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="17">
+  <line no="18">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="18">
+  <line no="19">
     <token name="T_DOC_COMMENT">     * @var integer from 0 to (NUMBER_OF_STATES-1)</token>
   </line>
-  <line no="19">
+  <line no="20">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="20">
+  <line no="21">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PRIVATE">private</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$state</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="21"/>
-  <line no="22">
+  <line no="22"/>
+  <line no="23">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="23">
+  <line no="24">
     <token name="T_DOC_COMMENT">     * @const Maximum number of states</token>
   </line>
-  <line no="24">
+  <line no="25">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="25">
+  <line no="26">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -119,80 +125,102 @@
     <token name="T_LNUMBER">7</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="26"/>
-  <line no="27">
+  <line no="27"/>
+  <line no="28">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="28">
+  <line no="29">
     <token name="T_DOC_COMMENT">     * @var AbstractTrafficSignal</token>
   </line>
-  <line no="29">
+  <line no="30">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="30">
+  <line no="31">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PRIVATE">private</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$eastTrafficLight</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="31"/>
-  <line no="32">
+  <line no="32"/>
+  <line no="33">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="33">
+  <line no="34">
     <token name="T_DOC_COMMENT">     * @var AbstractTrafficSignal</token>
   </line>
-  <line no="34">
+  <line no="35">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="35">
+  <line no="36">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PRIVATE">private</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$westTrafficLight</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="36"/>
-  <line no="37">
+  <line no="37"/>
+  <line no="38">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="38">
+  <line no="39">
     <token name="T_DOC_COMMENT">     * @var AbstractTrafficSignal</token>
   </line>
-  <line no="39">
+  <line no="40">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="40">
+  <line no="41">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PRIVATE">private</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$northWalkSign</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="41"/>
-  <line no="42">
+  <line no="42"/>
+  <line no="43">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="43">
+  <line no="44">
     <token name="T_DOC_COMMENT">     * @var AbstractTrafficSignal</token>
   </line>
-  <line no="44">
+  <line no="45">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="45">
+  <line no="46">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PRIVATE">private</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$southWalkSign</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="46"/>
-  <line no="47">
+  <line no="47"/>
+  <line no="48">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="49">
+    <token name="T_DOC_COMMENT">     * @var integer</token>
+  </line>
+  <line no="50">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="51">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PRIVATE">private</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$nextInterval</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="52"/>
+  <line no="53">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -201,40 +229,40 @@
     <token name="T_STRING">__construct</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
   </line>
-  <line no="48">
+  <line no="54">
     <token name="T_WHITESPACE">        </token>
     <token name="T_STRING">AbstractTrafficSignal</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$eastTrafficLight</token>
     <token name="T_PHPDOX_COMMA">,</token>
   </line>
-  <line no="49">
+  <line no="55">
     <token name="T_WHITESPACE">        </token>
     <token name="T_STRING">AbstractTrafficSignal</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$westTrafficLight</token>
     <token name="T_PHPDOX_COMMA">,</token>
   </line>
-  <line no="50">
+  <line no="56">
     <token name="T_WHITESPACE">        </token>
     <token name="T_STRING">AbstractTrafficSignal</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$northWalkSign</token>
     <token name="T_PHPDOX_COMMA">,</token>
   </line>
-  <line no="51">
+  <line no="57">
     <token name="T_WHITESPACE">        </token>
     <token name="T_STRING">AbstractTrafficSignal</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$southWalkSign</token>
   </line>
-  <line no="52">
+  <line no="58">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="53">
+  <line no="59">
     <token name="T_WHITESPACE">        </token>
     <token name="T_STRING">Time</token>
     <token name="T_DOUBLE_COLON">::</token>
@@ -244,7 +272,7 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="54">
+  <line no="60">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -255,7 +283,7 @@
     <token name="T_VARIABLE">$eastTrafficLight</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="55">
+  <line no="61">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -266,7 +294,7 @@
     <token name="T_VARIABLE">$westTrafficLight</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="56">
+  <line no="62">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -279,7 +307,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_COMMENT">// Stop</token>
   </line>
-  <line no="57">
+  <line no="63">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -292,10 +320,10 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_COMMENT">// Stop</token>
   </line>
-  <line no="58">
+  <line no="64">
     <token name="T_WHITESPACE">        </token>
   </line>
-  <line no="59">
+  <line no="65">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -308,7 +336,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_COMMENT">// Walk</token>
   </line>
-  <line no="60">
+  <line no="66">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -321,10 +349,10 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_COMMENT">// Walk</token>
   </line>
-  <line no="61">
+  <line no="67">
     <token name="T_WHITESPACE">        </token>
   </line>
-  <line no="62">
+  <line no="68">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -335,7 +363,7 @@
     <token name="T_LNUMBER">0</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="63">
+  <line no="69">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -346,7 +374,7 @@
     <token name="T_LNUMBER">120</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="64">
+  <line no="70">
     <token name="T_WHITESPACE">        </token>
     <token name="T_STRING">Time</token>
     <token name="T_DOUBLE_COLON">::</token>
@@ -360,12 +388,12 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="65">
+  <line no="71">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="66"/>
-  <line no="67">
+  <line no="72"/>
+  <line no="73">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -378,11 +406,11 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">void</token>
   </line>
-  <line no="68">
+  <line no="74">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="69">
+  <line no="75">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -404,8 +432,8 @@
     <token name="T_STRING">NUMBER_OF_STATES</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="70"/>
-  <line no="71">
+  <line no="76"/>
+  <line no="77">
     <token name="T_WHITESPACE">        </token>
     <token name="T_SWITCH">switch</token>
     <token name="T_WHITESPACE"> </token>
@@ -417,14 +445,14 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="72">
+  <line no="78">
     <token name="T_WHITESPACE">            </token>
     <token name="T_CASE">case</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_LNUMBER">0</token>
     <token name="T_PHPDOX_COLON">:</token>
   </line>
-  <line no="73">
+  <line no="79">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -437,7 +465,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_COMMENT">// stop-&gt;go</token>
   </line>
-  <line no="74">
+  <line no="80">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -450,7 +478,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_COMMENT">// stop-&gt;go</token>
   </line>
-  <line no="75">
+  <line no="81">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -463,7 +491,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_COMMENT">// stop-&gt;go</token>
   </line>
-  <line no="76">
+  <line no="82">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -476,7 +504,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_COMMENT">// stop-&gt;go</token>
   </line>
-  <line no="77">
+  <line no="83">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -487,20 +515,20 @@
     <token name="T_LNUMBER">120</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="78">
+  <line no="84">
     <token name="T_WHITESPACE">                </token>
     <token name="T_BREAK">break</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="79"/>
-  <line no="80">
+  <line no="85"/>
+  <line no="86">
     <token name="T_WHITESPACE">            </token>
     <token name="T_CASE">case</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_LNUMBER">1</token>
     <token name="T_PHPDOX_COLON">:</token>
   </line>
-  <line no="81">
+  <line no="87">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -511,7 +539,7 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="82">
+  <line no="88">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -522,59 +550,11 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="83">
-    <token name="T_WHITESPACE">                </token>
-    <token name="T_VARIABLE">$this</token>
-    <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">northWalkSign</token>
-    <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">requestPassage</token>
-    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-    <token name="T_PHPDOX_SEMICOLON">;</token>
-  </line>
-  <line no="84">
-    <token name="T_WHITESPACE">                </token>
-    <token name="T_VARIABLE">$this</token>
-    <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">southWalkSign</token>
-    <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">requestPassage</token>
-    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-    <token name="T_PHPDOX_SEMICOLON">;</token>
-  </line>
-  <line no="85">
-    <token name="T_WHITESPACE">                </token>
-    <token name="T_VARIABLE">$this</token>
-    <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">nextInterval</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_PLUS_EQUAL">+=</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_LNUMBER">60</token>
-    <token name="T_PHPDOX_SEMICOLON">;</token>
-  </line>
-  <line no="86">
-    <token name="T_WHITESPACE">                </token>
-    <token name="T_BREAK">break</token>
-    <token name="T_PHPDOX_SEMICOLON">;</token>
-  </line>
-  <line no="87">
-    <token name="T_WHITESPACE">            </token>
-  </line>
-  <line no="88">
-    <token name="T_WHITESPACE">            </token>
-    <token name="T_CASE">case</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_LNUMBER">2</token>
-    <token name="T_PHPDOX_COLON">:</token>
-  </line>
   <line no="89">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">eastTrafficLight</token>
+    <token name="T_STRING">northWalkSign</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
     <token name="T_STRING">requestPassage</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
@@ -585,7 +565,7 @@
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">westTrafficLight</token>
+    <token name="T_STRING">southWalkSign</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
     <token name="T_STRING">requestPassage</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
@@ -596,6 +576,54 @@
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">nextInterval</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PLUS_EQUAL">+=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">60</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="92">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_BREAK">break</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="93">
+    <token name="T_WHITESPACE">            </token>
+  </line>
+  <line no="94">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_CASE">case</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">2</token>
+    <token name="T_PHPDOX_COLON">:</token>
+  </line>
+  <line no="95">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">eastTrafficLight</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">requestPassage</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="96">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">westTrafficLight</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">requestPassage</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="97">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
     <token name="T_STRING">northWalkSign</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
     <token name="T_STRING">requestPassage</token>
@@ -603,7 +631,7 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="92">
+  <line no="98">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -614,7 +642,7 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="93">
+  <line no="99">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -627,7 +655,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_COMMENT">// go-&gt;Caution</token>
   </line>
-  <line no="94">
+  <line no="100">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -640,7 +668,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_COMMENT">// go-&gt;Caution</token>
   </line>
-  <line no="95">
+  <line no="101">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -651,20 +679,20 @@
     <token name="T_LNUMBER">12</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="96">
+  <line no="102">
     <token name="T_WHITESPACE">                </token>
     <token name="T_BREAK">break</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="97"/>
-  <line no="98">
+  <line no="103"/>
+  <line no="104">
     <token name="T_WHITESPACE">            </token>
     <token name="T_CASE">case</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_LNUMBER">3</token>
     <token name="T_PHPDOX_COLON">:</token>
   </line>
-  <line no="99">
+  <line no="105">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -675,7 +703,7 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="100">
+  <line no="106">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -686,7 +714,7 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="101">
+  <line no="107">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -697,7 +725,7 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="102">
+  <line no="108">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -708,7 +736,7 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="103">
+  <line no="109">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -721,7 +749,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_COMMENT">// Caution-&gt;Stop</token>
   </line>
-  <line no="104">
+  <line no="110">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -734,7 +762,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_COMMENT">// Caution-&gt;Stop</token>
   </line>
-  <line no="105">
+  <line no="111">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -745,20 +773,20 @@
     <token name="T_LNUMBER">5</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="106">
+  <line no="112">
     <token name="T_WHITESPACE">                </token>
     <token name="T_BREAK">break</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="107"/>
-  <line no="108">
+  <line no="113"/>
+  <line no="114">
     <token name="T_WHITESPACE">            </token>
     <token name="T_CASE">case</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_LNUMBER">4</token>
     <token name="T_PHPDOX_COLON">:</token>
   </line>
-  <line no="109">
+  <line no="115">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -771,64 +799,18 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_COMMENT">// Stop-&gt;Go</token>
   </line>
-  <line no="110">
-    <token name="T_WHITESPACE">                </token>
-    <token name="T_VARIABLE">$this</token>
-    <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">southWalkSign</token>
-    <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">changeState</token>
-    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-    <token name="T_PHPDOX_SEMICOLON">;</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_COMMENT">// Stop-&gt;Go</token>
-  </line>
-  <line no="111">
-    <token name="T_WHITESPACE">                </token>
-    <token name="T_VARIABLE">$this</token>
-    <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">northWalkSign</token>
-    <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">passageGranted</token>
-    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-    <token name="T_PHPDOX_SEMICOLON">;</token>
-  </line>
-  <line no="112">
-    <token name="T_WHITESPACE">                </token>
-    <token name="T_VARIABLE">$this</token>
-    <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">southWalkSign</token>
-    <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">passageGranted</token>
-    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-    <token name="T_PHPDOX_SEMICOLON">;</token>
-  </line>
-  <line no="113">
-    <token name="T_WHITESPACE">                </token>
-    <token name="T_VARIABLE">$this</token>
-    <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">nextInterval</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_PLUS_EQUAL">+=</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_LNUMBER">60</token>
-    <token name="T_PHPDOX_SEMICOLON">;</token>
-  </line>
-  <line no="114">
-    <token name="T_WHITESPACE">                </token>
-    <token name="T_BREAK">break</token>
-    <token name="T_PHPDOX_SEMICOLON">;</token>
-  </line>
-  <line no="115"/>
   <line no="116">
-    <token name="T_WHITESPACE">            </token>
-    <token name="T_CASE">case</token>
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">southWalkSign</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">changeState</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_LNUMBER">5</token>
-    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_COMMENT">// Stop-&gt;Go</token>
   </line>
   <line no="117">
     <token name="T_WHITESPACE">                </token>
@@ -836,12 +818,10 @@
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
     <token name="T_STRING">northWalkSign</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">changeState</token>
+    <token name="T_STRING">passageGranted</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_COMMENT">// Go-&gt;Caution</token>
   </line>
   <line no="118">
     <token name="T_WHITESPACE">                </token>
@@ -849,12 +829,10 @@
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
     <token name="T_STRING">southWalkSign</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">changeState</token>
+    <token name="T_STRING">passageGranted</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_COMMENT">// Go-&gt;Caution</token>
   </line>
   <line no="119">
     <token name="T_WHITESPACE">                </token>
@@ -864,7 +842,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PLUS_EQUAL">+=</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_LNUMBER">20</token>
+    <token name="T_LNUMBER">60</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
   <line no="120">
@@ -877,7 +855,7 @@
     <token name="T_WHITESPACE">            </token>
     <token name="T_CASE">case</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_LNUMBER">6</token>
+    <token name="T_LNUMBER">5</token>
     <token name="T_PHPDOX_COLON">:</token>
   </line>
   <line no="123">
@@ -891,7 +869,7 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_COMMENT">// Caution-&gt;Stop</token>
+    <token name="T_COMMENT">// Go-&gt;Caution</token>
   </line>
   <line no="124">
     <token name="T_WHITESPACE">                </token>
@@ -904,7 +882,7 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_COMMENT">// Caution-&gt;Stop</token>
+    <token name="T_COMMENT">// Go-&gt;Caution</token>
   </line>
   <line no="125">
     <token name="T_WHITESPACE">                </token>
@@ -914,7 +892,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PLUS_EQUAL">+=</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_LNUMBER">5</token>
+    <token name="T_LNUMBER">20</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
   <line no="126">
@@ -925,10 +903,60 @@
   <line no="127"/>
   <line no="128">
     <token name="T_WHITESPACE">            </token>
-    <token name="T_DEFAULT">default</token>
+    <token name="T_CASE">case</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">6</token>
     <token name="T_PHPDOX_COLON">:</token>
   </line>
   <line no="129">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">northWalkSign</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">changeState</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// Caution-&gt;Stop</token>
+  </line>
+  <line no="130">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">southWalkSign</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">changeState</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// Caution-&gt;Stop</token>
+  </line>
+  <line no="131">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">nextInterval</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PLUS_EQUAL">+=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">5</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="132">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_BREAK">break</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="133"/>
+  <line no="134">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_DEFAULT">default</token>
+    <token name="T_PHPDOX_COLON">:</token>
+  </line>
+  <line no="135">
     <token name="T_WHITESPACE">                </token>
     <token name="T_THROW">throw</token>
     <token name="T_WHITESPACE"> </token>
@@ -943,21 +971,21 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="130">
+  <line no="136">
     <token name="T_WHITESPACE">                </token>
     <token name="T_BREAK">break</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="131">
+  <line no="137">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="132">
+  <line no="138">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="133"/>
-  <line no="134">
+  <line no="139"/>
+  <line no="140">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -970,11 +998,11 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">string</token>
   </line>
-  <line no="135">
+  <line no="141">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="136">
+  <line no="142">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -987,12 +1015,12 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="137">
+  <line no="143">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="138"/>
-  <line no="139">
+  <line no="144"/>
+  <line no="145">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -1005,11 +1033,11 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">string</token>
   </line>
-  <line no="140">
+  <line no="146">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="141">
+  <line no="147">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -1022,12 +1050,12 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="142">
+  <line no="148">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="143"/>
-  <line no="144">
+  <line no="149"/>
+  <line no="150">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -1040,11 +1068,11 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">string</token>
   </line>
-  <line no="145">
+  <line no="151">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="146">
+  <line no="152">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -1057,12 +1085,12 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="147">
+  <line no="153">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="148"/>
-  <line no="149">
+  <line no="154"/>
+  <line no="155">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -1075,11 +1103,11 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">string</token>
   </line>
-  <line no="150">
+  <line no="156">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="151">
+  <line no="157">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -1092,28 +1120,28 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="152">
+  <line no="158">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="153"/>
-  <line no="154">
+  <line no="159"/>
+  <line no="160">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="155">
+  <line no="161">
     <token name="T_DOC_COMMENT">     * getState will return the current state</token>
   </line>
-  <line no="156">
+  <line no="162">
     <token name="T_DOC_COMMENT">     *</token>
   </line>
-  <line no="157">
+  <line no="163">
     <token name="T_DOC_COMMENT">     * @return integer</token>
   </line>
-  <line no="158">
+  <line no="164">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="159">
+  <line no="165">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -1126,11 +1154,11 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">int</token>
   </line>
-  <line no="160">
+  <line no="166">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="161">
+  <line no="167">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -1139,12 +1167,31 @@
     <token name="T_STRING">state</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="162">
+  <line no="168">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="163"/>
-  <line no="164">
+  <line no="169"/>
+  <line no="170">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="171">
+    <token name="T_DOC_COMMENT">     * update method part of SplSubject</token>
+  </line>
+  <line no="172">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="173">
+    <token name="T_DOC_COMMENT">     * @param Time $subject</token>
+  </line>
+  <line no="174">
+    <token name="T_DOC_COMMENT">     * @return void</token>
+  </line>
+  <line no="175">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="176">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -1160,11 +1207,11 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">void</token>
   </line>
-  <line no="165">
+  <line no="177">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="166">
+  <line no="178">
     <token name="T_WHITESPACE">        </token>
     <token name="T_IF">if</token>
     <token name="T_WHITESPACE"> </token>
@@ -1184,7 +1231,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="167">
+  <line no="179">
     <token name="T_WHITESPACE">            </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -1193,16 +1240,16 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="168">
+  <line no="180">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="169">
+  <line no="181">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="170">
+  <line no="182">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="171"/>
+  <line no="183"/>
 </source>

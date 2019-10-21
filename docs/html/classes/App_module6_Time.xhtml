@@ -79,7 +79,7 @@
                     </li><li>private static  <a href="#members">$endOfTime</a>;
                     </li><li>private static <span title="App\module6\Time">Time</span> <a href="#members">$instance</a> =
                         NULL;
-                    </li><li>private static <span title="SplObjectStorage">SplObjectStorage</span> <a href="#members">$observers</a>;
+                    </li><li>private static <span title="SplQueue">SplQueue</span> <a href="#members">$observers</a>;
                     </li></ul><ul class="none"><li>// methods</li><li>public static void <a title="App\module6\Time" href="../classes/App_module6_Time/init.xhtml">init</a>()
                     </li><li>public static <span title="Time">Time</span> <a title="App\module6\Time" href="../classes/App_module6_Time/getInstance.xhtml">getInstance</a>()
                     </li><li>public static void <a title="App\module6\Time" href="../classes/App_module6_Time/run.xhtml">run</a>()
@@ -117,7 +117,7 @@
                 <a title="App\module6\Time" href="../classes/App_module6_Time.xhtml">App\module6\Time</a></li>
             <li id="observers"><strong>$observers</strong>
                 —
-                <a title="SplObjectStorage" href="../classes/SplObjectStorage.xhtml">SplObjectStorage</a></li>
+                <a title="SplQueue" href="../classes/SplQueue.xhtml">SplQueue</a></li>
           </ul>
         </div>
         <h2 id="methods">Methods</h2>
@@ -146,14 +146,12 @@
             <li id="getTime">
               <a title="App\module6\Time" href="../classes/App_module6_Time/getTime.xhtml">getTime()</a>
             </li>
-            <li id="init">
-              <a title="App\module6\Time" href="../classes/App_module6_Time/init.xhtml">init()</a>
-            </li>
+            <li id="init"><a title="App\module6\Time" href="../classes/App_module6_Time/init.xhtml">init()</a>
+                — Initialise the singleton Time</li>
             <li id="notify"><a title="App\module6\Time" href="../classes/App_module6_Time/notify.xhtml">notify()</a>
                 — Notify all observers of the new time, part of SplSubject Interface</li>
-            <li id="run">
-              <a title="App\module6\Time" href="../classes/App_module6_Time/run.xhtml">run()</a>
-            </li>
+            <li id="run"><a title="App\module6\Time" href="../classes/App_module6_Time/run.xhtml">run()</a>
+                — Simulate the passage of time (1 second) per run</li>
           </ul>
         </div>
       </section>

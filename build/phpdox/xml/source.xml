@@ -2,34 +2,36 @@
 <source xmlns="http://xml.phpdox.net/src">
   <dir name="C:/laragon/www/gofpatterns/App">
     <dir name="module2">
-      <file name="AbstractTrafficSignal.php" size="1261" time="2019-10-08T16:58:22+01:00" unixtime="1570550302" sha1="b4ec5b8831df570553bbd2d48f7addb0a1a7ec55" xml="tokens/module2/AbstractTrafficSignal.php.xml"/>
-      <file name="TrafficLight.php" size="449" time="2019-10-18T16:52:00+01:00" unixtime="1571413920" sha1="78899f09eba4eb8220b3125214838c4d0970a75a" xml="tokens/module2/TrafficLight.php.xml"/>
-      <file name="WalkSign.php" size="464" time="2019-10-08T16:58:32+01:00" unixtime="1570550312" sha1="8fe090476cb4654e0f129beafdb524561de175ed" xml="tokens/module2/WalkSign.php.xml"/>
+      <file name="AbstractTrafficSignal.php" size="1235" time="2019-10-20T19:40:20+00:00" unixtime="1571600420" sha1="fd12f075d79ea844601c77cbe9eec13ef742d43f" xml="tokens/module2/AbstractTrafficSignal.php.xml"/>
+      <file name="TrafficLight.php" size="449" time="2019-10-18T15:52:00+00:00" unixtime="1571413920" sha1="78899f09eba4eb8220b3125214838c4d0970a75a" xml="tokens/module2/TrafficLight.php.xml"/>
+      <file name="WalkSign.php" size="464" time="2019-10-08T15:58:32+00:00" unixtime="1570550312" sha1="8fe090476cb4654e0f129beafdb524561de175ed" xml="tokens/module2/WalkSign.php.xml"/>
     </dir>
     <dir name="module3">
-      <file name="Clock.php" size="1233" time="2019-10-08T19:24:09+01:00" unixtime="1570559049" sha1="6dcd7a4cc796e3a5ac276990cfca4332dd53604b" xml="tokens/module3/Clock.php.xml"/>
-      <file name="Singleton.php" size="1049" time="2019-10-08T19:15:00+01:00" unixtime="1570558500" sha1="ae6b4caf191ec2239af9650fd5d72c4193733da9" xml="tokens/module3/Singleton.php.xml"/>
+      <file name="Clock.php" size="1250" time="2019-10-20T22:16:56+00:00" unixtime="1571609816" sha1="5d02b510ace5614f0967dcec7008085651c6620d" xml="tokens/module3/Clock.php.xml"/>
+      <file name="Singleton.php" size="1049" time="2019-10-08T18:15:00+00:00" unixtime="1570558500" sha1="ae6b4caf191ec2239af9650fd5d72c4193733da9" xml="tokens/module3/Singleton.php.xml"/>
     </dir>
     <dir name="module4">
-      <file name="AbstractVehicle.php" size="1150" time="2019-10-10T15:06:03+01:00" unixtime="1570716363" sha1="ca5578c3c8f56739f36451bcd69b3dd33a0b38ed" xml="tokens/module4/AbstractVehicle.php.xml"/>
-      <file name="AbstractVehicleFactory.php" size="1778" time="2019-10-10T19:22:29+01:00" unixtime="1570731749" sha1="4769924e820ebd8301ade1af7bb96e6b0b8e0655" xml="tokens/module4/AbstractVehicleFactory.php.xml"/>
-      <file name="Bicycle.php" size="204" time="2019-10-10T15:04:54+01:00" unixtime="1570716294" sha1="bffd18e7f015126c9a9a467a5b5e08c598eb95bb" xml="tokens/module4/Bicycle.php.xml"/>
-      <file name="Bus.php" size="199" time="2019-10-10T15:04:58+01:00" unixtime="1570716298" sha1="8d7894b56fcb00224c871208f9c6ac6d0abe6bf9" xml="tokens/module4/Bus.php.xml"/>
-      <file name="Car.php" size="201" time="2019-10-10T15:05:02+01:00" unixtime="1570716302" sha1="de9071adcd96497f60271f4c229ec238077b130a" xml="tokens/module4/Car.php.xml"/>
-      <file name="ConcreteVehicleFactory.php" size="884" time="2019-10-18T17:39:52+01:00" unixtime="1571416792" sha1="a27d33a67942c1baa3971810c99a17964e3f25fe" xml="tokens/module4/ConcreteVehicleFactory.php.xml"/>
-      <file name="Pedestrian.php" size="204" time="2019-10-10T15:05:07+01:00" unixtime="1570716307" sha1="39718574e93fd725f4ec85ecd870e5dd086207e9" xml="tokens/module4/Pedestrian.php.xml"/>
+      <file name="AbstractVehicle.php" size="1150" time="2019-10-10T14:06:03+00:00" unixtime="1570716363" sha1="ca5578c3c8f56739f36451bcd69b3dd33a0b38ed" xml="tokens/module4/AbstractVehicle.php.xml"/>
+      <file name="AbstractVehicleFactory.php" size="1778" time="2019-10-10T18:22:29+00:00" unixtime="1570731749" sha1="4769924e820ebd8301ade1af7bb96e6b0b8e0655" xml="tokens/module4/AbstractVehicleFactory.php.xml"/>
+      <file name="Bicycle.php" size="204" time="2019-10-10T14:04:54+00:00" unixtime="1570716294" sha1="bffd18e7f015126c9a9a467a5b5e08c598eb95bb" xml="tokens/module4/Bicycle.php.xml"/>
+      <file name="Bus.php" size="199" time="2019-10-10T14:04:58+00:00" unixtime="1570716298" sha1="8d7894b56fcb00224c871208f9c6ac6d0abe6bf9" xml="tokens/module4/Bus.php.xml"/>
+      <file name="Car.php" size="201" time="2019-10-10T14:05:02+00:00" unixtime="1570716302" sha1="de9071adcd96497f60271f4c229ec238077b130a" xml="tokens/module4/Car.php.xml"/>
+      <file name="ConcreteVehicleFactory.php" size="884" time="2019-10-18T16:39:52+00:00" unixtime="1571416792" sha1="a27d33a67942c1baa3971810c99a17964e3f25fe" xml="tokens/module4/ConcreteVehicleFactory.php.xml"/>
+      <file name="Pedestrian.php" size="204" time="2019-10-10T14:05:07+00:00" unixtime="1570716307" sha1="39718574e93fd725f4ec85ecd870e5dd086207e9" xml="tokens/module4/Pedestrian.php.xml"/>
     </dir>
     <dir name="module5">
-      <file name="VehicleQueue.php" size="2270" time="2019-10-17T17:26:49+01:00" unixtime="1571329609" sha1="e8b2620f5c4f4885d9bfbc3ef5fc3377b5133cb5" xml="tokens/module5/VehicleQueue.php.xml"/>
+      <file name="VehicleQueue.php" size="2380" time="2019-10-20T21:46:59+00:00" unixtime="1571608019" sha1="a3f0f88aa5ce98ac3a7e56fceceba1e4c6b5b899" xml="tokens/module5/VehicleQueue.php.xml"/>
     </dir>
     <dir name="module6">
-      <file name="SignalMediator.php" size="4279" time="2019-10-18T13:31:39+01:00" unixtime="1571401899" sha1="c3e5b76278bb0abe42549a15b5591d3b7f4bf503" xml="tokens/module6/SignalMediator.php.xml"/>
-      <file name="Time.php" size="2363" time="2019-10-18T14:19:14+01:00" unixtime="1571404754" sha1="cf0e52d207b977c8048b9fbe40363d6e629eb34d" xml="tokens/module6/Time.php.xml"/>
-      <file name="TimeObserver.php" size="250" time="2019-10-17T20:05:20+01:00" unixtime="1571339120" sha1="f79c5860fcebbe2b3595b020bff7e488a35df8e5" xml="tokens/module6/TimeObserver.php.xml"/>
-      <file name="VehicleQueue.php" size="2800" time="2019-10-18T17:50:14+01:00" unixtime="1571417414" sha1="fac6f8add26f734d1e60e8c157c3553c312a9ad8" xml="tokens/module6/VehicleQueue.php.xml"/>
+      <file name="SignalMediator.php" size="4333" time="2019-10-20T20:08:26+00:00" unixtime="1571602106" sha1="e3f4666bdee3f0a3a1f8d4cdca27a685c79dce31" xml="tokens/module6/SignalMediator.php.xml"/>
+      <file name="Time.php" size="2502" time="2019-10-20T21:45:32+00:00" unixtime="1571607932" sha1="bbcab713ca5fd2344a63056c25600807c989edd1" xml="tokens/module6/Time.php.xml"/>
+      <file name="TimeObserver.php" size="276" time="2019-10-20T19:11:53+00:00" unixtime="1571598713" sha1="36afa8da362ebced428688c958940618dd0c553b" xml="tokens/module6/TimeObserver.php.xml"/>
+      <file name="VehicleQueue.php" size="3144" time="2019-10-20T21:48:43+00:00" unixtime="1571608123" sha1="1c9f59be58e270d09ae7de0d0eed0f2812e5f8c3" xml="tokens/module6/VehicleQueue.php.xml"/>
     </dir>
     <dir name="module7">
-      <file name="SignalMediator.php" size="4939" time="2019-10-18T17:41:39+01:00" unixtime="1571416899" sha1="ca41bc5f75ac18044d827ee4942a3065483a1b78" xml="tokens/module7/SignalMediator.php.xml"/>
+      <file name="Client.php" size="2380" time="2019-10-20T20:59:36+00:00" unixtime="1571605176" sha1="12164c63fc83e2b59a7778d5e4dc44581cbc85c2" xml="tokens/module7/Client.php.xml"/>
+      <file name="SignalMediator.php" size="5133" time="2019-10-20T21:00:19+00:00" unixtime="1571605219" sha1="3769208b0aab2f61b622419fd7710490f78f6435" xml="tokens/module7/SignalMediator.php.xml"/>
+      <file name="VehicleQueue.php" size="3094" time="2019-10-20T21:25:50+00:00" unixtime="1571606750" sha1="bbaa0cd11557f0c2c397729c24996898c05a3219" xml="tokens/module7/VehicleQueue.php.xml"/>
     </dir>
   </dir>
 </source>

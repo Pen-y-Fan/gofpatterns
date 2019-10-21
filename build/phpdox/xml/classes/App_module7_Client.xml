@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\module7\Client" namespace="App\module7" name="Client" abstract="false" final="false" start="20" end="79">
+  <file path="C:/laragon/www/gofpatterns/App/module7" file="Client.php" realpath="C:/laragon/www/gofpatterns/App/module7/Client.php" size="2380" time="2019-10-20T20:59:36+00:00" unixtime="1571605176" sha1="12164c63fc83e2b59a7778d5e4dc44581cbc85c2" relative="module7/Client.php"/>
+  <docblock>
+    <description compact="Note: Due to working with Time (singleton) always run() the course till the endTime, at which point the singleton will rest to null"/>
+  </docblock>
+  <implements full="SplObserver" namespace="" name="SplObserver"/>
+  <member name="eastQueue" visibility="protected" static="false" line="22"/>
+  <member name="westQueue" visibility="protected" static="false" line="24"/>
+  <member name="northQueue" visibility="protected" static="false" line="26"/>
+  <member name="southQueue" visibility="protected" static="false" line="28"/>
+  <member name="simulationTime" visibility="protected" static="false" line="30"/>
+  <constructor name="__construct" start="35" end="57" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add at test to run the client as a test and view the output"/>
+    </docblock>
+    <parameter name="simulationTime" byreference="false" type="int"/>
+  </constructor>
+  <method name="run" start="59" end="65" abstract="false" final="false" static="false" visibility="public">
+    <return type="bool" nullable="false"/>
+  </method>
+  <method name="update" start="71" end="78" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$subject">
+        <type full="App\module6\Time" namespace="App\module6" name="Time"/>
+      </param>
+      <return type="object">
+        <type full="App\module7\void" namespace="App\module7" name="void"/>
+      </return>
+    </docblock>
+    <return type="void" nullable="false"/>
+    <parameter name="subject" byreference="false" type="object">
+      <type full="SplSubject" namespace="" name="SplSubject"/>
+    </parameter>
+  </method>
+  <interface full="SplObserver" namespace="" name="SplObserver">
+    <method name="update" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Receive update from subject"/>
+      <return type="void"/>
+    </docblock>
+    <parameter name="subject" optional="false" byreference="false" type="object" class="SplSubject"/>
+  </method>
+  </interface>
+</class>

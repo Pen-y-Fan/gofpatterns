@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="App\module7\SignalMediator" namespace="App\module7" name="SignalMediator" abstract="false" final="false" start="15" end="170">
-  <file path="C:/laragon/www/gofpatterns/App/module7" file="SignalMediator.php" realpath="C:/laragon/www/gofpatterns/App/module7/SignalMediator.php" size="4939" time="2019-10-18T17:41:39+01:00" unixtime="1571416899" sha1="ca41bc5f75ac18044d827ee4942a3065483a1b78" relative="module7/SignalMediator.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="App\module7\SignalMediator" namespace="App\module7" name="SignalMediator" abstract="false" final="false" start="16" end="182">
+  <file path="C:/laragon/www/gofpatterns/App/module7" file="SignalMediator.php" realpath="C:/laragon/www/gofpatterns/App/module7/SignalMediator.php" size="5133" time="2019-10-20T21:00:19+00:00" unixtime="1571605219" sha1="3769208b0aab2f61b622419fd7710490f78f6435" relative="module7/SignalMediator.php"/>
   <docblock>
     <description compact="Signal Mediator controls the traffic light system"/>
   </docblock>
   <implements full="SplObserver" namespace="" name="SplObserver"/>
-  <member name="state" visibility="private" static="false" line="20">
+  <member name="state" visibility="private" static="false" line="21">
     <docblock>
       <description/>
       <var description="from 0 to (NUMBER_OF_STATES-1)" type="integer"/>
@@ -17,7 +17,7 @@
       <const value="Maximum number of states"/>
     </docblock>
   </constant>
-  <member name="eastTrafficLight" visibility="private" static="false" line="30">
+  <member name="eastTrafficLight" visibility="private" static="false" line="31">
     <docblock>
       <description/>
       <var type="object">
@@ -25,7 +25,7 @@
       </var>
     </docblock>
   </member>
-  <member name="westTrafficLight" visibility="private" static="false" line="35">
+  <member name="westTrafficLight" visibility="private" static="false" line="36">
     <docblock>
       <description/>
       <var type="object">
@@ -33,7 +33,7 @@
       </var>
     </docblock>
   </member>
-  <member name="northWalkSign" visibility="private" static="false" line="40">
+  <member name="northWalkSign" visibility="private" static="false" line="41">
     <docblock>
       <description/>
       <var type="object">
@@ -41,7 +41,7 @@
       </var>
     </docblock>
   </member>
-  <member name="southWalkSign" visibility="private" static="false" line="45">
+  <member name="southWalkSign" visibility="private" static="false" line="46">
     <docblock>
       <description/>
       <var type="object">
@@ -49,7 +49,13 @@
       </var>
     </docblock>
   </member>
-  <constructor name="__construct" start="47" end="65" abstract="false" final="false" static="false" visibility="public">
+  <member name="nextInterval" default="0" type="integer" visibility="private" static="false" line="51">
+    <docblock>
+      <description/>
+      <var type="integer"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="53" end="71" abstract="false" final="false" static="false" visibility="public">
     <parameter name="eastTrafficLight" byreference="false" type="object">
       <type full="App\module2\AbstractTrafficSignal" namespace="App\module2" name="AbstractTrafficSignal"/>
     </parameter>
@@ -63,35 +69,44 @@
       <type full="App\module2\AbstractTrafficSignal" namespace="App\module2" name="AbstractTrafficSignal"/>
     </parameter>
     <inline>
-      <comment value="Stop" line="56"/>
-      <comment value="Stop" line="57"/>
-      <comment value="Walk" line="59"/>
-      <comment value="Walk" line="60"/>
+      <comment value="Stop" line="62"/>
+      <comment value="Stop" line="63"/>
+      <comment value="Walk" line="65"/>
+      <comment value="Walk" line="66"/>
     </inline>
   </constructor>
-  <method name="changeState" start="67" end="132" abstract="false" final="false" static="false" visibility="public">
+  <method name="changeState" start="73" end="138" abstract="false" final="false" static="false" visibility="public">
     <return type="void" nullable="false"/>
   </method>
-  <method name="getEastTrafficLight" start="134" end="137" abstract="false" final="false" static="false" visibility="public">
+  <method name="getEastTrafficLight" start="140" end="143" abstract="false" final="false" static="false" visibility="public">
     <return type="string" nullable="false"/>
   </method>
-  <method name="getWestTrafficLight" start="139" end="142" abstract="false" final="false" static="false" visibility="public">
+  <method name="getWestTrafficLight" start="145" end="148" abstract="false" final="false" static="false" visibility="public">
     <return type="string" nullable="false"/>
   </method>
-  <method name="getNorthWalkSign" start="144" end="147" abstract="false" final="false" static="false" visibility="public">
+  <method name="getNorthWalkSign" start="150" end="153" abstract="false" final="false" static="false" visibility="public">
     <return type="string" nullable="false"/>
   </method>
-  <method name="getSouthWalkSign" start="149" end="152" abstract="false" final="false" static="false" visibility="public">
+  <method name="getSouthWalkSign" start="155" end="158" abstract="false" final="false" static="false" visibility="public">
     <return type="string" nullable="false"/>
   </method>
-  <method name="getState" start="159" end="162" abstract="false" final="false" static="false" visibility="public">
+  <method name="getState" start="165" end="168" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="getState will return the current state"/>
       <return type="integer"/>
     </docblock>
     <return type="int" nullable="false"/>
   </method>
-  <method name="update" start="164" end="169" abstract="false" final="false" static="false" visibility="public">
+  <method name="update" start="176" end="181" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="update method part of SplSubject"/>
+      <param type="object" variable="$subject">
+        <type full="App\module6\Time" namespace="App\module6" name="Time"/>
+      </param>
+      <return type="object">
+        <type full="App\module7\void" namespace="App\module7" name="void"/>
+      </return>
+    </docblock>
     <return type="void" nullable="false"/>
     <parameter name="subject" byreference="false" type="object">
       <type full="SplSubject" namespace="" name="SplSubject"/>

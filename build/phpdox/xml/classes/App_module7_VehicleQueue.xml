@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\module7\VehicleQueue" namespace="App\module7" name="VehicleQueue" abstract="false" final="false" start="16" end="141">
+  <file path="C:/laragon/www/gofpatterns/App/module7" file="VehicleQueue.php" realpath="C:/laragon/www/gofpatterns/App/module7/VehicleQueue.php" size="3094" time="2019-10-20T21:25:50+00:00" unixtime="1571606750" sha1="bbaa0cd11557f0c2c397729c24996898c05a3219" relative="module7/VehicleQueue.php"/>
+  <implements full="SplObserver" namespace="" name="SplObserver"/>
+  <member name="theQueue" visibility="protected" static="false" line="21">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="SplQueue" namespace="" name="SplQueue"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="queueLength" default="0" type="integer" visibility="protected" static="false" line="26">
+    <docblock>
+      <description/>
+      <var type="float"/>
+    </docblock>
+  </member>
+  <member name="vehiclesPerSecond" visibility="protected" static="false" line="31">
+    <docblock>
+      <description/>
+      <var type="float"/>
+    </docblock>
+  </member>
+  <member name="signal" visibility="protected" static="false" line="37">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="App\module2\TrafficLight" namespace="App\module2" name="TrafficLight"/>
+      </var>
+      <var type="object">
+        <type full="App\module2\WalkSign" namespace="App\module2" name="WalkSign"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="theFactory" visibility="protected" static="false" line="42">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="App\module4\ConcreteVehicleFactory" namespace="App\module4" name="ConcreteVehicleFactory"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="44" end="54" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="vehiclesPerSecond" byreference="false" type="float"/>
+    <parameter name="theFactory" byreference="false" type="object">
+      <type full="App\module4\ConcreteVehicleFactory" namespace="App\module4" name="ConcreteVehicleFactory"/>
+    </parameter>
+    <parameter name="signal" byreference="false" type="object">
+      <type full="App\module2\AbstractTrafficSignal" namespace="App\module2" name="AbstractTrafficSignal"/>
+    </parameter>
+  </constructor>
+  <method name="enter" start="61" end="67" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="The enter() method is called each second."/>
+      <return type="object">
+        <type full="App\module7\void" namespace="App\module7" name="void"/>
+      </return>
+    </docblock>
+    <return type="void" nullable="false"/>
+  </method>
+  <method name="leave" start="74" end="80" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="The leave() method is invoked whenever the corresponding light is green."/>
+      <return type="object">
+        <type full="App\module7\void" namespace="App\module7" name="void"/>
+      </return>
+    </docblock>
+    <return type="void" nullable="false"/>
+  </method>
+  <method name="getLength" start="90" end="99" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="The getLength() method returns the total length in meters of the queue;   that is the sum of the lengths of the individual vehicles."/>
+      <var description="$length" type="float"/>
+      <var description="$vehicle" type="object">
+        <type full="App\module4\ConcreteVehicleFactory" namespace="App\module4" name="ConcreteVehicleFactory"/>
+      </var>
+      <return type="float"/>
+    </docblock>
+    <return type="float" nullable="false"/>
+  </method>
+  <method name="getSize" start="106" end="109" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="The getSize() method, returns the number of vehicles in the queue."/>
+      <return type="integer"/>
+    </docblock>
+    <return type="int" nullable="false"/>
+  </method>
+  <method name="list" start="117" end="124" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Finally, list() is a method intended mostly for debugging that returns the list of vehicles (classes) in the queue"/>
+      <return type="array"/>
+    </docblock>
+    <return type="array" nullable="false"/>
+  </method>
+  <method name="update" start="130" end="140" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$subject">
+        <type full="App\module6\Time" namespace="App\module6" name="Time"/>
+      </param>
+      <return type="object">
+        <type full="App\module7\void" namespace="App\module7" name="void"/>
+      </return>
+    </docblock>
+    <return type="void" nullable="false"/>
+    <parameter name="subject" byreference="false" type="object">
+      <type full="SplSubject" namespace="" name="SplSubject"/>
+    </parameter>
+  </method>
+  <interface full="SplObserver" namespace="" name="SplObserver">
+    <method name="update" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Receive update from subject"/>
+      <return type="void"/>
+    </docblock>
+    <parameter name="subject" optional="false" byreference="false" type="object" class="SplSubject"/>
+  </method>
+  </interface>
+</class>

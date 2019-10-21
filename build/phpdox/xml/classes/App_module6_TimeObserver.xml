@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="App\module6\TimeObserver" namespace="App\module6" name="TimeObserver" abstract="false" final="false" start="12" end="18">
-  <file path="C:/laragon/www/gofpatterns/App/module6" file="TimeObserver.php" realpath="C:/laragon/www/gofpatterns/App/module6/TimeObserver.php" size="250" time="2019-10-17T20:05:20+01:00" unixtime="1571339120" sha1="f79c5860fcebbe2b3595b020bff7e488a35df8e5" relative="module6/TimeObserver.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="App\module6\TimeObserver" namespace="App\module6" name="TimeObserver" abstract="false" final="false" start="13" end="19">
+  <file path="C:/laragon/www/gofpatterns/App/module6" file="TimeObserver.php" realpath="C:/laragon/www/gofpatterns/App/module6/TimeObserver.php" size="276" time="2019-10-20T19:11:53+00:00" unixtime="1571598713" sha1="36afa8da362ebced428688c958940618dd0c553b" relative="module6/TimeObserver.php"/>
   <docblock>
     <description compact="Observer,that who receives news"/>
   </docblock>
   <implements full="SplObserver" namespace="" name="SplObserver"/>
-  <method name="update" start="14" end="17" abstract="false" final="false" static="false" visibility="public">
+  <method name="update" start="15" end="18" abstract="false" final="false" static="false" visibility="public">
     <return type="void" nullable="false"/>
-    <parameter name="newTime" byreference="false" type="int"/>
+    <parameter name="SplSubject" byreference="false" type="object">
+      <type full="SplSubject" namespace="" name="SplSubject"/>
+    </parameter>
     <inline>
-      <comment value="new time received" line="16"/>
+      <comment value="new time received" line="17"/>
     </inline>
   </method>
   <interface full="SplObserver" namespace="" name="SplObserver">

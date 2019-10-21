@@ -7,4 +7,4 @@
     </docblock>
     <parameter name="subject" optional="false" byreference="false" type="object" class="SplSubject"/>
   </method>
-<implementors><class full="App\module6\TimeObserver" namespace="App\module6" name="TimeObserver"/><class full="App\module6\VehicleQueue" namespace="App\module6" name="VehicleQueue"/><class full="App\module7\SignalMediator" namespace="App\module7" name="SignalMediator"/></implementors></interface>
+<implementors><class full="App\module6\TimeObserver" namespace="App\module6" name="TimeObserver"/><class full="App\module6\VehicleQueue" namespace="App\module6" name="VehicleQueue"/><class full="App\module7\SignalMediator" namespace="App\module7" name="SignalMediator"/><class full="App\module7\VehicleQueue" namespace="App\module7" name="VehicleQueue"/></implementors></interface>

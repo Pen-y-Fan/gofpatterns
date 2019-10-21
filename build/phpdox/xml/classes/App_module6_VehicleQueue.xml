@@ -1,36 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="App\module6\VehicleQueue" namespace="App\module6" name="VehicleQueue" abstract="false" final="false" start="13" end="121">
-  <file path="C:/laragon/www/gofpatterns/App/module6" file="VehicleQueue.php" realpath="C:/laragon/www/gofpatterns/App/module6/VehicleQueue.php" size="2800" time="2019-10-18T17:50:14+01:00" unixtime="1571417414" sha1="fac6f8add26f734d1e60e8c157c3553c312a9ad8" relative="module6/VehicleQueue.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="App\module6\VehicleQueue" namespace="App\module6" name="VehicleQueue" abstract="false" final="false" start="16" end="143">
+  <file path="C:/laragon/www/gofpatterns/App/module6" file="VehicleQueue.php" realpath="C:/laragon/www/gofpatterns/App/module6/VehicleQueue.php" size="3144" time="2019-10-20T21:48:43+00:00" unixtime="1571608123" sha1="1c9f59be58e270d09ae7de0d0eed0f2812e5f8c3" relative="module6/VehicleQueue.php"/>
   <implements full="SplObserver" namespace="" name="SplObserver"/>
-  <member name="theQueue" visibility="protected" static="false" line="18">
+  <member name="theQueue" visibility="protected" static="false" line="21">
     <docblock>
       <description/>
       <var type="object">
-        <type full="SplObjectStorage" namespace="" name="SplObjectStorage"/>
+        <type full="SplQueue" namespace="" name="SplQueue"/>
       </var>
     </docblock>
   </member>
-  <member name="queueLength" default="0" type="integer" visibility="protected" static="false" line="23">
+  <member name="queueLength" default="0" type="integer" visibility="protected" static="false" line="26">
     <docblock>
       <description/>
       <var type="float"/>
     </docblock>
   </member>
-  <member name="vehiclesPerSecond" visibility="protected" static="false" line="28">
+  <member name="vehiclesPerSecond" visibility="protected" static="false" line="31">
     <docblock>
       <description/>
       <var type="float"/>
     </docblock>
   </member>
-  <member name="signal" visibility="protected" static="false" line="33">
+  <member name="signal" visibility="protected" static="false" line="39">
     <docblock>
       <description/>
+      <var type="object">
+        <type full="App\module2\AbstractTrafficSignal" namespace="App\module2" name="AbstractTrafficSignal"/>
+      </var>
       <var type="object">
         <type full="App\module2\TrafficLight" namespace="App\module2" name="TrafficLight"/>
       </var>
+      <var type="object">
+        <type full="App\module2\WalkSign" namespace="App\module2" name="WalkSign"/>
+      </var>
     </docblock>
   </member>
-  <member name="theFactory" visibility="protected" static="false" line="38">
+  <member name="theFactory" visibility="protected" static="false" line="44">
     <docblock>
       <description/>
       <var type="object">
@@ -38,16 +44,16 @@
       </var>
     </docblock>
   </member>
-  <constructor name="__construct" start="40" end="47" abstract="false" final="false" static="false" visibility="public">
+  <constructor name="__construct" start="46" end="56" abstract="false" final="false" static="false" visibility="public">
     <parameter name="vehiclesPerSecond" byreference="false" type="float"/>
     <parameter name="theFactory" byreference="false" type="object">
       <type full="App\module4\ConcreteVehicleFactory" namespace="App\module4" name="ConcreteVehicleFactory"/>
     </parameter>
     <parameter name="signal" byreference="false" type="object">
-      <type full="App\module2\TrafficLight" namespace="App\module2" name="TrafficLight"/>
+      <type full="App\module2\AbstractTrafficSignal" namespace="App\module2" name="AbstractTrafficSignal"/>
     </parameter>
   </constructor>
-  <method name="enter" start="54" end="61" abstract="false" final="false" static="false" visibility="public">
+  <method name="enter" start="63" end="69" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="The enter() method is called each second."/>
       <return type="object">
@@ -56,7 +62,7 @@
     </docblock>
     <return type="void" nullable="false"/>
   </method>
-  <method name="leave" start="68" end="75" abstract="false" final="false" static="false" visibility="public">
+  <method name="leave" start="76" end="82" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="The leave() method is invoked whenever the corresponding light is green."/>
       <return type="object">
@@ -65,29 +71,41 @@
     </docblock>
     <return type="void" nullable="false"/>
   </method>
-  <method name="getLength" start="81" end="84" abstract="false" final="false" static="false" visibility="public">
+  <method name="getLength" start="92" end="100" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="The getLength() method returns the total length in meters of the queue;   that is the sum of the lengths of the individual vehicles."/>
+      <var description="$length" type="float"/>
+      <var description="$vehicle" type="object">
+        <type full="App\module4\ConcreteVehicleFactory" namespace="App\module4" name="ConcreteVehicleFactory"/>
+      </var>
+      <return type="float"/>
     </docblock>
     <return type="float" nullable="false"/>
   </method>
-  <method name="getSize" start="91" end="94" abstract="false" final="false" static="false" visibility="public">
+  <method name="getSize" start="107" end="110" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="The getSize() method, returns the number of vehicles in the queue."/>
       <return type="integer"/>
     </docblock>
     <return type="int" nullable="false"/>
   </method>
-  <method name="list" start="102" end="109" abstract="false" final="false" static="false" visibility="public">
+  <method name="list" start="118" end="125" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Finally, list() is a method intended mostly for debugging that returns the list of vehicles (classes) in the queue"/>
+      <return type="array"/>
+    </docblock>
+    <return type="array" nullable="false"/>
+  </method>
+  <method name="update" start="133" end="142" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="update method, part of SplSubject"/>
+      <param type="object" variable="$subject">
+        <type full="App\module6\Time" namespace="App\module6" name="Time"/>
+      </param>
       <return type="object">
         <type full="App\module6\void" namespace="App\module6" name="void"/>
       </return>
     </docblock>
-    <return type="array" nullable="false"/>
-  </method>
-  <method name="update" start="111" end="120" abstract="false" final="false" static="false" visibility="public">
     <return type="void" nullable="false"/>
     <parameter name="subject" byreference="false" type="object">
       <type full="SplSubject" namespace="" name="SplSubject"/>

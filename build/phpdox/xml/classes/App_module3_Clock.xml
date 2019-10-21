@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="App\module3\Clock" namespace="App\module3" name="Clock" abstract="false" final="true" start="7" end="73">
-  <file path="C:/laragon/www/gofpatterns/App/module3" file="Clock.php" realpath="C:/laragon/www/gofpatterns/App/module3/Clock.php" size="1233" time="2019-10-08T19:24:09+01:00" unixtime="1570559049" sha1="6dcd7a4cc796e3a5ac276990cfca4332dd53604b" relative="module3/Clock.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="App\module3\Clock" namespace="App\module3" name="Clock" abstract="false" final="true" start="7" end="74">
+  <file path="C:/laragon/www/gofpatterns/App/module3" file="Clock.php" realpath="C:/laragon/www/gofpatterns/App/module3/Clock.php" size="1250" time="2019-10-20T22:16:56+00:00" unixtime="1571609816" sha1="5d02b510ace5614f0967dcec7008085651c6620d" relative="module3/Clock.php"/>
   <member name="currentTime" default="0" type="integer" visibility="private" static="true" line="12">
     <docblock>
       <description/>
@@ -13,15 +13,16 @@
       <var type="integer"/>
     </docblock>
   </member>
-  <member name="instance" default="NULL" visibility="private" static="true" line="22">
+  <member name="instance" default="NULL" visibility="private" static="true" line="23">
     <docblock>
       <description/>
       <var type="object">
         <type full="App\module3\Clock" namespace="App\module3" name="Clock"/>
       </var>
+      <var type="null"/>
     </docblock>
   </member>
-  <method name="time" start="29" end="38" abstract="false" final="false" static="true" visibility="public">
+  <method name="time" start="30" end="39" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description/>
       <param type="integer" variable="$endTime"/>
@@ -34,7 +35,7 @@
     </return>
     <parameter name="endTime" byreference="false" type="int"/>
   </method>
-  <method name="run" start="43" end="52" abstract="false" final="false" static="true" visibility="public">
+  <method name="run" start="44" end="53" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description/>
       <return type="object">
@@ -43,14 +44,14 @@
     </docblock>
     <return type="void" nullable="false"/>
   </method>
-  <method name="getTime" start="57" end="60" abstract="false" final="false" static="true" visibility="public">
+  <method name="getTime" start="58" end="61" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description/>
       <return type="integer"/>
     </docblock>
     <return type="int" nullable="false"/>
   </method>
-  <constructor name="__construct" start="62" end="64" abstract="false" final="false" static="false" visibility="private"/>
-  <method name="__clone" start="66" end="68" abstract="false" final="false" static="false" visibility="private"/>
-  <method name="__wakeup" start="70" end="72" abstract="false" final="false" static="false" visibility="private"/>
+  <constructor name="__construct" start="63" end="65" abstract="false" final="false" static="false" visibility="private"/>
+  <method name="__clone" start="67" end="69" abstract="false" final="false" static="false" visibility="private"/>
+  <method name="__wakeup" start="71" end="73" abstract="false" final="false" static="false" visibility="private"/>
 </class>

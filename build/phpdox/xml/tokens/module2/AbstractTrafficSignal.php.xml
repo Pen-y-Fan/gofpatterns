@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="C:/laragon/www/gofpatterns/App/module2" file="AbstractTrafficSignal.php" realpath="C:/laragon/www/gofpatterns/App/module2/AbstractTrafficSignal.php" size="1261" time="2019-10-08T16:58:22+01:00" unixtime="1570550302" sha1="b4ec5b8831df570553bbd2d48f7addb0a1a7ec55" relative="module2/AbstractTrafficSignal.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="C:/laragon/www/gofpatterns/App/module2" file="AbstractTrafficSignal.php" realpath="C:/laragon/www/gofpatterns/App/module2/AbstractTrafficSignal.php" size="1235" time="2019-10-20T19:40:20+00:00" unixtime="1571600420" sha1="fd12f075d79ea844601c77cbe9eec13ef742d43f" relative="module2/AbstractTrafficSignal.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
@@ -401,12 +401,11 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_CONSTANT_ENCAPSED_STRING">"["</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_PHPDOX_PLUS">+</token>
+    <token name="T_PHPDOX_DOT">.</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_VARIABLE">$this</token>
-    <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">getClass</token>
+    <token name="T_STRING">get_class</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$this</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_DOT">.</token>
@@ -414,19 +413,9 @@
     <token name="T_CONSTANT_ENCAPSED_STRING">": "</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_DOT">.</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_VARIABLE">$this</token>
-    <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">direction</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_PHPDOX_DOT">.</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_CONSTANT_ENCAPSED_STRING">" "</token>
   </line>
   <line no="59">
     <token name="T_WHITESPACE">        </token>
-    <token name="T_PHPDOX_DOT">.</token>
-    <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
     <token name="T_STRING">getMessage</token>

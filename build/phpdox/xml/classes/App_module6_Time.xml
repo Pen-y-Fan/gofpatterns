@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="App\module6\Time" namespace="App\module6" name="Time" abstract="false" final="true" start="11" end="123">
-  <file path="C:/laragon/www/gofpatterns/App/module6" file="Time.php" realpath="C:/laragon/www/gofpatterns/App/module6/Time.php" size="2363" time="2019-10-18T14:19:14+01:00" unixtime="1571404754" sha1="cf0e52d207b977c8048b9fbe40363d6e629eb34d" relative="module6/Time.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="App\module6\Time" namespace="App\module6" name="Time" abstract="false" final="true" start="11" end="127">
+  <file path="C:/laragon/www/gofpatterns/App/module6" file="Time.php" realpath="C:/laragon/www/gofpatterns/App/module6/Time.php" size="2502" time="2019-10-20T21:45:32+00:00" unixtime="1571607932" sha1="bbcab713ca5fd2344a63056c25600807c989edd1" relative="module6/Time.php"/>
   <implements full="SplSubject" namespace="" name="SplSubject"/>
   <member name="currentTime" default="0" type="integer" visibility="private" static="true" line="16">
     <docblock>
@@ -14,34 +14,34 @@
       <var type="integer"/>
     </docblock>
   </member>
-  <member name="instance" default="NULL" visibility="private" static="true" line="26">
+  <member name="instance" default="NULL" visibility="private" static="true" line="27">
     <docblock>
       <description/>
       <var type="object">
         <type full="App\module6\Time" namespace="App\module6" name="Time"/>
       </var>
+      <var type="null"/>
     </docblock>
   </member>
-  <member name="observers" visibility="private" static="true" line="31">
+  <member name="observers" visibility="private" static="true" line="32">
     <docblock>
       <description/>
       <var type="object">
-        <type full="SplObjectStorage" namespace="" name="SplObjectStorage"/>
+        <type full="SplQueue" namespace="" name="SplQueue"/>
       </var>
     </docblock>
   </member>
-  <method name="init" start="36" end="44" abstract="false" final="false" static="true" visibility="public">
+  <method name="init" start="38" end="46" abstract="false" final="false" static="true" visibility="public">
     <docblock>
-      <description/>
+      <description compact="Initialise the singleton Time"/>
       <param type="integer" variable="$endTime"/>
     </docblock>
     <return type="void" nullable="false"/>
     <parameter name="endTime" byreference="false" type="int"/>
   </method>
-  <method name="getInstance" start="50" end="53" abstract="false" final="false" static="true" visibility="public">
+  <method name="getInstance" start="51" end="54" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description/>
-      <param type="integer" variable="$endTime"/>
       <return type="object">
         <type full="App\module6\Time" namespace="App\module6" name="Time"/>
       </return>
@@ -50,23 +50,23 @@
       <type full="App\module6\Time" namespace="App\module6" name="Time"/>
     </return>
   </method>
-  <method name="run" start="58" end="68" abstract="false" final="false" static="true" visibility="public">
+  <method name="run" start="60" end="70" abstract="false" final="false" static="true" visibility="public">
     <docblock>
-      <description/>
+      <description compact="Simulate the passage of time (1 second) per run"/>
       <return type="object">
         <type full="App\module6\void" namespace="App\module6" name="void"/>
       </return>
     </docblock>
     <return type="void" nullable="false"/>
   </method>
-  <method name="getTime" start="73" end="76" abstract="false" final="false" static="true" visibility="public">
+  <method name="getTime" start="75" end="78" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description/>
       <return type="integer"/>
     </docblock>
     <return type="int" nullable="false"/>
   </method>
-  <method name="attach" start="84" end="87" abstract="false" final="false" static="false" visibility="public">
+  <method name="attach" start="86" end="89" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="add an observer, part of SplSubject Interface"/>
       <param type="object" variable="$observer">
@@ -81,7 +81,7 @@
       <type full="SplObserver" namespace="" name="SplObserver"/>
     </parameter>
   </method>
-  <method name="detach" start="95" end="98" abstract="false" final="false" static="false" visibility="public">
+  <method name="detach" start="97" end="100" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Remove an observer, part of SplSubject Interface"/>
       <param type="object" variable="$observer">
@@ -95,19 +95,25 @@
     <parameter name="observer" byreference="false" type="object">
       <type full="SplObserver" namespace="" name="SplObserver"/>
     </parameter>
+    <inline>
+      <comment value="Not implemented" line="99"/>
+    </inline>
   </method>
-  <method name="notify" start="105" end="110" abstract="false" final="false" static="false" visibility="public">
+  <method name="notify" start="108" end="114" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Notify all observers of the new time, part of SplSubject Interface"/>
+      <var description="$observer" type="object">
+        <type full="SplObserver" namespace="" name="SplObserver"/>
+      </var>
       <return type="object">
         <type full="App\module6\void" namespace="App\module6" name="void"/>
       </return>
     </docblock>
     <return type="void" nullable="false"/>
   </method>
-  <constructor name="__construct" start="112" end="114" abstract="false" final="false" static="false" visibility="private"/>
-  <method name="__clone" start="116" end="118" abstract="false" final="false" static="false" visibility="private"/>
-  <method name="__wakeup" start="120" end="122" abstract="false" final="false" static="false" visibility="private"/>
+  <constructor name="__construct" start="116" end="118" abstract="false" final="false" static="false" visibility="private"/>
+  <method name="__clone" start="120" end="122" abstract="false" final="false" static="false" visibility="private"/>
+  <method name="__wakeup" start="124" end="126" abstract="false" final="false" static="false" visibility="private"/>
   <interface full="SplSubject" namespace="" name="SplSubject">
     <method name="attach" abstract="false" static="false" visibility="public" final="false">
     <docblock>

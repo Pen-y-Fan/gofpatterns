@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="C:/laragon/www/gofpatterns/App/module6" file="TimeObserver.php" realpath="C:/laragon/www/gofpatterns/App/module6/TimeObserver.php" size="250" time="2019-10-17T20:05:20+01:00" unixtime="1571339120" sha1="f79c5860fcebbe2b3595b020bff7e488a35df8e5" relative="module6/TimeObserver.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="C:/laragon/www/gofpatterns/App/module6" file="TimeObserver.php" realpath="C:/laragon/www/gofpatterns/App/module6/TimeObserver.php" size="276" time="2019-10-20T19:11:53+00:00" unixtime="1571598713" sha1="36afa8da362ebced428688c958940618dd0c553b" relative="module6/TimeObserver.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
@@ -30,17 +30,23 @@
     <token name="T_STRING">SplObserver</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="8"/>
-  <line no="9">
+  <line no="8">
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">SplSubject</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="10">
+  <line no="11">
     <token name="T_DOC_COMMENT">* Observer,that who receives news</token>
   </line>
-  <line no="11">
+  <line no="12">
     <token name="T_DOC_COMMENT">*/</token>
   </line>
-  <line no="12">
+  <line no="13">
     <token name="T_CLASS">class</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">TimeObserver</token>
@@ -49,10 +55,10 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">SplObserver</token>
   </line>
-  <line no="13">
+  <line no="14">
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="14">
+  <line no="15">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -60,28 +66,28 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">update</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_STRING">int</token>
+    <token name="T_STRING">SplSubject</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_VARIABLE">$newTime</token>
+    <token name="T_VARIABLE">$SplSubject</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_COLON">:</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">void</token>
   </line>
-  <line no="15">
+  <line no="16">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="16">
+  <line no="17">
     <token name="T_WHITESPACE">        </token>
     <token name="T_COMMENT">// new time received</token>
   </line>
-  <line no="17">
+  <line no="18">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="18">
+  <line no="19">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="19"/>
+  <line no="20"/>
 </source>
