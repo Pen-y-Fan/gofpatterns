@@ -24,9 +24,11 @@
     }
   },
   "scripts": {
-    "phpstan": "vendor/bin/phpstan analyse -l 7 -c phpstan.neon app test",
+    "phpdox": "vendor/bin/phpdox",
+    "phpstan": "vendor/bin/phpstan analyse -l 7",
     "test": "vendor/bin/phpunit",
-    "wphpstan": "vendor\\bin\\phpstan analyse app test --level 7",
+    "wphpdox": "vendor\\bin\\phpdox.bat",
+    "wphpstan": "vendor\\bin\\phpstan.bat analyse app test --level 7",
     "wtest": "vendor\\bin\\phpunit.bat"
   }
 }
