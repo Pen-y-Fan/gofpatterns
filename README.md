@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project is based on the The GoF patterns course website, it is separated into modules for each subject:
+This project is based on the The [GoF patterns](https://www.gofpatterns.com/) course website, it is separated into seven modules:
 
 - [GoFPatterns](https://www.gofpatterns.com/)
   - [Design Patterns](https://www.gofpatterns.com/design-patterns/module1/intro-design-patterns.php) - module 1
@@ -13,7 +13,7 @@ This project is based on the The GoF patterns course website, it is separated in
   - [Behavioral Patterns](https://www.gofpatterns.com/design-patterns/module6/intro-behavioral-designPatterns.php) - module 6
   - [Designing Software](https://www.gofpatterns.com/design-patterns/module7/intro-designPattern-softwareDesign.php) - module 7
 
-The purpose of this project is to compliment the GoFPatterns website, while working through the course. The GoFPatterns site provided code in Java and C#, whenever possible the code from the website has been re-written into PHP
+The purpose of this project is to compliment the GoFPatterns website, while working through the course. The GoFPatterns site provided code in Java and C#. I have re-written into PHP
 
 Each module has a separated namespace within the App folder. Each course project (design pattern) is tested using PHPUnit.
 
@@ -33,31 +33,25 @@ cd gofpatterns
 git clone https://github.com/pen-y-fan/gofpatterns
 ```
 
-2\. Install with composer:
+2\. Run composer install:
 
 ```sh
 composer install
 ```
 
-3\. Test:
+3\. Run tests:
 
-Windows:
+**Windows OS**:
+
+```sh
+composer wtest
+```
+
+**Mac or Linux OS**:
 
 ```sh
 composer test
 ```
-
-Mac/Linux:
-
-```sh
-./vendor/bin/phpunit
-```
-
-### Requirements
-
-- PHP 7.2 or higher
-- Composer
-- git (optional but recommended)
 
 ### 1. Clone the project
 
@@ -92,7 +86,9 @@ composer test
 
 ### 4. PHP Stan
 
-PHPStan has been also been installed as a dev dependency, this will run static analysis tests.
+PHPStan has been also been included as a dev dependency, this will run static analysis tests.
+
+**Windows OS**:
 
 ```sh
 composer wphpstan
@@ -106,9 +102,11 @@ composer phpstan
 
 ### 5. Documentation
 
-PHP Dox has been also been installed as a dev dependency, this will automatically create xml and html documentation. This has already been run and the documentation is location in the build (xml) and docs (html) directories.
+PHP Dox has been included as a dev dependency, this will automatically create xml and html documentation. This has already been run and the documentation is location in the build (xml) and docs (html) directories.
 
 **Only** run if any classes, methods or properties are updated:
+
+**Windows OS**:
 
 ```sh
 composer wphpdox
