@@ -4,20 +4,30 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        php:
+          - "7.2"
+          - "7.3"
     steps:
-    - uses: actions/checkout@v1
+      - uses: actions/checkout@v1
 
-    - name: Validate composer.json and composer.lock
-      run: composer validate
+      - name: PHP version
+        run: php -v
 
-    - name: Install dependencies
-      run: composer install --prefer-dist --no-progress --no-suggest
+      - name: Composer version
+        run: composer -V
 
-    - name: Run test suite
-      run: composer run-script test
-    
-    - name: Run static analysis
-      run: composer run-script phpstan
+      - name: Validate composer.json and composer.lock
+        run: composer validate
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress --no-suggest
+
+      - name: Run test suite
+        run: composer run-script test
+
+      - name: Run static analysis
+        run: composer run-script phpstan
