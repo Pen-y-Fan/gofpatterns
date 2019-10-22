@@ -1,6 +1,6 @@
 name: PHP Composer
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -8,7 +8,7 @@ jobs:
     strategy:
       max-parallel: 15
       matrix:
-        php-versions: ["7.2", "7.3"]
+        php-versions: ["7.3"]
 
     name: PHP ${{ matrix.php-versions }} Test
 
@@ -20,6 +20,7 @@ jobs:
         uses: shivammathur/setup-php@master
         with:
           php-version: ${{ matrix.php-versions }}
+          coverage: xdebug
 
       - name: PHP version
         run: php -v
@@ -38,3 +39,7 @@ jobs:
 
       - name: Static analysis
         run: composer run-script phpstan
+
+      - name: Test with phpunit
+        run: vendor/bin/phpunit --coverage-text
+        shell: pwsh

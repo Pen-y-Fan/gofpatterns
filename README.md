@@ -59,7 +59,7 @@ See [Cloning a repository](https://help.github.com/en/articles/cloning-a-reposit
 
 ### 2. Install dependencies
 
-The project uses PHPUnit for tests, which has a requirement for PHP 7.2 or higher.
+The project uses PHPStan for static analysis, which has a requirement for **PHP 7.3** or higher.
 
 Once the project has been cloned, change directory to the project folder (normally gofpatterns or gofpatterns-master) and run composer install
 
@@ -86,7 +86,7 @@ composer test
 
 ### 4. PHP Stan
 
-PHPStan has been also been included as a dev dependency, this will run static analysis tests.
+PHPStan has been also been included as a dev dependency, this will run static analysis.
 
 **Windows OS**:
 
