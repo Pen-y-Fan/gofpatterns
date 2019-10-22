@@ -5,17 +5,21 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-
     strategy:
+      max-parallel: 15
       matrix:
-        php:
-          - "7.2"
-          - "7.3"
+        php-versions: ["7.2", "7.3"]
+
+    name: PHP ${{ matrix.php-versions }} Test
 
     steps:
-      - uses: actions/checkout@v1
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@master
         with:
-          php: ${{ matrix.php }}
+          php-version: ${{ matrix.php-versions }}
 
       - name: PHP version
         run: php -v
