@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
         with:
-          php-version: ${{ matrix.php }}
+          php: ${{ matrix.php }}
 
       - name: PHP version
         run: php -v
